@@ -96,18 +96,18 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-27T22:12:29.684646+00:00",
+    "assessed_at": "2026-08-27T22:15:03.048234+00:00",
     "classification": "UNQUALIFIED",
     "completion_deadline": "2026-08-27T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
     "expected_cycle": "2026-08-26",
     "expected_run_at": "2026-08-26T23:30:00-04:00",
-    "latest_receipt_commit": "f35de5a",
-    "latest_receipt_completed_at": "2026-08-27T03:30:00.605998+00:00",
+    "latest_receipt_commit": "89768e1",
+    "latest_receipt_completed_at": "2026-08-27T22:12:29.684646+00:00",
     "latest_receipt_publication_action": "updated",
-    "latest_receipt_web_publication_action": "UNAVAILABLE",
-    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
+    "latest_receipt_web_publication_action": "updated",
+    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
@@ -171,7 +171,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "62078d99768375ddeb2d8dfad0cdbb629682ac99aa2659a9cfcc7632529f6688",
+  "publication_fingerprint": "0b64b89493c58f4de1930f1042a06a55bfeabcec8335d5adcf17fa1b524dbeca",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -187,7 +187,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-27T22:12:29.684646+00:00",
+  "source_generated_at": "2026-08-27T22:15:03.048234+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -203,11 +203,6 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'cf88b4b0a8f455811975e05cf777de861afae5a7' -> '89768e1cb80d768eb3b84d618228cf9409f7e150'",
-    "working_tree: 'clean' -> 'dirty'",
-    "test_health: 'PASS_FOR_EXACT_CLEAN_HEAD' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
-    "operator_summary: 'HEALTHY' -> 'ATTENTION'",
-    "nightly_project_state_cycle: 'ON_TIME_SUCCESS' -> 'UNQUALIFIED'",
-    "priorities: ['project-state-mobile-alert-validation', 'sustained-paper-observation', 'broker-risk-evidence', 'strategy-economics'] -> ['project-state-voice-briefing-validation', 'sustained-paper-observation', 'broker-risk-evidence', 'strategy-economics']"
+    "No material canonical fields changed."
   ]
 }
