@@ -1,0 +1,213 @@
+{
+  "active_workstreams": [
+    {
+      "id": "project-intelligence",
+      "name": "Project Intelligence & Collaboration",
+      "objective": "Validate a public sanitized read-only briefing through the AI trading ChatGPT project and CarPlay.",
+      "roadmap_issues": [
+        92
+      ],
+      "status": "PHASE_8_VOICE_BRIEFING"
+    },
+    {
+      "id": "sustained-paper-evidence",
+      "name": "Sustained unattended PAPER evidence",
+      "objective": "Extend the accepted single-day baseline without extrapolating readiness.",
+      "roadmap_issues": [
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "id": "monitoring-mobile",
+      "name": "Monitoring and mobile visibility",
+      "objective": "Mature read-only monitoring, recovery guidance, and future mobile delivery.",
+      "roadmap_issues": [
+        9,
+        92
+      ],
+      "status": "ACTIVE"
+    },
+    {
+      "id": "research-intelligence",
+      "name": "Research intelligence and observational learning",
+      "objective": "Operate and calibrate the merged research pipeline without execution authority.",
+      "roadmap_issues": [
+        96
+      ],
+      "status": "ACTIVE_RESEARCH_ONLY"
+    }
+  ],
+  "blockers": [
+    "Trading outcomes and strategy attribution are not yet sufficiently linked for performance claims.",
+    "One accepted PAPER day does not establish sustained reliability or live readiness."
+  ],
+  "dan_attention": [
+    "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
+    "Review the nightly project-state cycle evidence before relying on the morning briefing.",
+    "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
+  ],
+  "engineering": {
+    "branch": "master",
+    "ci": "PASS",
+    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
+    "commit": "89768e1",
+    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
+    "working_tree": "dirty"
+  },
+  "freshness": {
+    "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
+    "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
+    "future_tolerance_seconds": 300,
+    "publication_cycle": "2026-08-27",
+    "schema_version": "argus_project_state_freshness_v1",
+    "stale_after_seconds": 129600
+  },
+  "highest_value_next_action": "Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.",
+  "known_risks": [
+    "Tracked prose can lag GitHub issue and Project state.",
+    "Existing reports have overlapping names but different authority and scope.",
+    "Project-state consolidation must remain isolated from watcher and market-cycle mutation.",
+    "Historical operational evidence must never be presented as current without applicability metadata.",
+    "The nightly task does not wake or power on the laptop; a missed run waits until Windows is next available.",
+    "GitHub scheduled workflows can be delayed or disabled after prolonged repository inactivity; cloud monitor health must remain observable.",
+    "The voice briefing allowlist is publicly accessible; future field additions require explicit privacy and safety review."
+  ],
+  "latest_completed_work": [
+    "The bounded watcher reload preserved its task and safety contracts and began recording healthy cadence and freshness incidents with no pending delivery.",
+    "Consumer-time nightly cadence detection now distinguishes on-time, late, missed, failed, unqualified, and unknown cycles independently of snapshot age.",
+    "The first natural 23:30 project-state cycle completed with result 0, current evidence, exact-clean-head CI, and protected tasks unchanged.",
+    "The isolated read-only 23:30 project-state task was securely registered, enabled, and passed an immediate scheduled execution with protected Argus tasks unchanged.",
+    "A schedule-ready but unregistered consolidation command now records freshness and publication receipts.",
+    "Issue #154 became the sanitized, idempotent, read-only cross-device project briefing.",
+    "A versioned, evidence-ranked project-state JSON contract and briefing renderer were implemented and validated.",
+    "August 25 was accepted as a single-day unattended PAPER evidence PASS.",
+    "PR #153 refreshed evidence-gated readiness and project-parts reporting.",
+    "Research Intelligence V2\u2013V8 was reconciled while remaining research-only."
+  ],
+  "next_recommended_work": [
+    "Review the first natural 23:30 task result, receipt, issue freshness, and next-morning briefing.",
+    "Confirm the synthetic GitHub Mobile notification and first scheduled 06:17 cloud monitor run.",
+    "Validate the AI trading project and CarPlay consumer against the public sanitized briefing without adding control authority.",
+    "Continue issue #87 sustained PAPER observation without changing the active runtime."
+  ],
+  "nightly_cycle": {
+    "assessed_at": "2026-08-27T22:12:29.684646+00:00",
+    "classification": "UNQUALIFIED",
+    "completion_deadline": "2026-08-27T00:00:00-04:00",
+    "completion_grace_seconds": 1800,
+    "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
+    "expected_cycle": "2026-08-26",
+    "expected_run_at": "2026-08-26T23:30:00-04:00",
+    "latest_receipt_commit": "f35de5a",
+    "latest_receipt_completed_at": "2026-08-27T03:30:00.605998+00:00",
+    "latest_receipt_publication_action": "updated",
+    "latest_receipt_web_publication_action": "UNAVAILABLE",
+    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
+    "schema_version": "argus_project_state_nightly_cycle_v1"
+  },
+  "operations": {
+    "operator_summary": "ATTENTION",
+    "paper_safety": "VERIFIED",
+    "reliability": "SOFTWARE_FAILURE",
+    "reliability_assessment_date": "2026-08-27",
+    "reliability_execution_outcome": "SOFTWARE_FAILURE",
+    "reliability_inferred_cause": "NONE",
+    "watcher": "HEALTHY"
+  },
+  "overall_project_status": "ATTENTION",
+  "priorities": [
+    {
+      "id": "project-state-voice-briefing-validation",
+      "rank": 1,
+      "roadmap_issues": [
+        92
+      ],
+      "summary": "Deploy the sanitized public briefing mirror and validate the \u201cArgus, status update\u201d CarPlay path."
+    },
+    {
+      "id": "sustained-paper-observation",
+      "rank": 2,
+      "roadmap_issues": [
+        87
+      ],
+      "summary": "Continue normal unattended PAPER evidence collection and daily reconciliation."
+    },
+    {
+      "id": "broker-risk-evidence",
+      "rank": 3,
+      "roadmap_issues": [
+        88,
+        89
+      ],
+      "summary": "Accumulate actual PAPER lifecycle and control-by-control risk evidence."
+    },
+    {
+      "id": "strategy-economics",
+      "rank": 4,
+      "roadmap_issues": [
+        90,
+        91
+      ],
+      "summary": "Preserve strategy configuration while measuring outcomes and regime coverage."
+    }
+  ],
+  "project": {
+    "current_phase": "PAPER evidence maturation and Project Intelligence Phase 8 voice briefing",
+    "name": "Argus / AI Trader",
+    "primary_objective": "Publish and validate a sanitized read-only status briefing for the AI trading ChatGPT project and CarPlay while unattended PAPER observation continues unchanged.",
+    "status": "ACTIVE"
+  },
+  "publication": {
+    "automated": true,
+    "issue_number": 154,
+    "mode": "AUTOMATED_NIGHTLY",
+    "read_only": true,
+    "status": "ENABLED_AND_MANUALLY_VERIFIED",
+    "surface": "github_issue",
+    "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
+  },
+  "publication_fingerprint": "62078d99768375ddeb2d8dfad0cdbb629682ac99aa2659a9cfcc7632529f6688",
+  "roadmap": {
+    "active_item_count": 14,
+    "done_item_count": 15,
+    "drift": "ALIGNED",
+    "drift_finding_count": 0,
+    "project_item_count": 29,
+    "state": "AVAILABLE"
+  },
+  "safety_scope": {
+    "authorizes_execution": false,
+    "external_surface_can_control_trading": false,
+    "paper_only": true,
+    "reporting_only": true
+  },
+  "schema_version": "argus_project_briefing_public_v1",
+  "source_generated_at": "2026-08-27T22:12:29.684646+00:00",
+  "source_schema_version": "argus_project_state_v1",
+  "trading_intelligence": {
+    "daily_pnl": 0.0,
+    "decision_count": 27,
+    "direction": "FLAT",
+    "evidence_date": "2026-08-26",
+    "fill_count": 0,
+    "order_submission_count": 0,
+    "realized_pnl": "UNAVAILABLE",
+    "state": "PARTIAL",
+    "strategy_attribution": "NOT_ASSESSABLE",
+    "trade_thesis_outcome_linkage": "NONE",
+    "unrealized_pnl": "UNAVAILABLE"
+  },
+  "what_changed": [
+    "commit_sha: 'cf88b4b0a8f455811975e05cf777de861afae5a7' -> '89768e1cb80d768eb3b84d618228cf9409f7e150'",
+    "working_tree: 'clean' -> 'dirty'",
+    "test_health: 'PASS_FOR_EXACT_CLEAN_HEAD' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
+    "operator_summary: 'HEALTHY' -> 'ATTENTION'",
+    "nightly_project_state_cycle: 'ON_TIME_SUCCESS' -> 'UNQUALIFIED'",
+    "priorities: ['project-state-mobile-alert-validation', 'sustained-paper-observation', 'broker-risk-evidence', 'strategy-economics'] -> ['project-state-voice-briefing-validation', 'sustained-paper-observation', 'broker-risk-evidence', 'strategy-economics']"
+  ]
+}
