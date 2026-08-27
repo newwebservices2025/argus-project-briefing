@@ -49,14 +49,15 @@
   "dan_attention": [
     "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
     "Review the nightly project-state cycle evidence before relying on the morning briefing.",
+    "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
     "branch": "master",
-    "ci": "PASS",
+    "ci": "PENDING",
     "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
-    "commit": "89768e1",
-    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
+    "commit": "c7e3d96",
+    "test_health": "UNKNOWN",
     "working_tree": "dirty"
   },
   "freshness": {
@@ -78,6 +79,7 @@
     "The voice briefing allowlist is publicly accessible; future field additions require explicit privacy and safety review."
   ],
   "latest_completed_work": [
+    "The sanitized public Pages mirror was deployed, qualified against a successful publication receipt, and wired into the AI trading project instructions.",
     "The bounded watcher reload preserved its task and safety contracts and began recording healthy cadence and freshness incidents with no pending delivery.",
     "Consumer-time nightly cadence detection now distinguishes on-time, late, missed, failed, unqualified, and unknown cycles independently of snapshot age.",
     "The first natural 23:30 project-state cycle completed with result 0, current evidence, exact-clean-head CI, and protected tasks unchanged.",
@@ -86,8 +88,7 @@
     "Issue #154 became the sanitized, idempotent, read-only cross-device project briefing.",
     "A versioned, evidence-ranked project-state JSON contract and briefing renderer were implemented and validated.",
     "August 25 was accepted as a single-day unattended PAPER evidence PASS.",
-    "PR #153 refreshed evidence-gated readiness and project-parts reporting.",
-    "Research Intelligence V2\u2013V8 was reconciled while remaining research-only."
+    "PR #153 refreshed evidence-gated readiness and project-parts reporting."
   ],
   "next_recommended_work": [
     "Review the first natural 23:30 task result, receipt, issue freshness, and next-morning briefing.",
@@ -96,7 +97,7 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-27T22:15:03.048234+00:00",
+    "assessed_at": "2026-08-27T22:29:12.517720+00:00",
     "classification": "UNQUALIFIED",
     "completion_deadline": "2026-08-27T00:00:00-04:00",
     "completion_grace_seconds": 1800,
@@ -104,7 +105,7 @@
     "expected_cycle": "2026-08-26",
     "expected_run_at": "2026-08-26T23:30:00-04:00",
     "latest_receipt_commit": "89768e1",
-    "latest_receipt_completed_at": "2026-08-27T22:12:29.684646+00:00",
+    "latest_receipt_completed_at": "2026-08-27T22:15:03.048234+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
@@ -127,7 +128,7 @@
       "roadmap_issues": [
         92
       ],
-      "summary": "Deploy the sanitized public briefing mirror and validate the \u201cArgus, status update\u201d CarPlay path."
+      "summary": "Validate the deployed sanitized public briefing through the \u201cArgus, status update\u201d CarPlay path."
     },
     {
       "id": "sustained-paper-observation",
@@ -159,7 +160,7 @@
   "project": {
     "current_phase": "PAPER evidence maturation and Project Intelligence Phase 8 voice briefing",
     "name": "Argus / AI Trader",
-    "primary_objective": "Publish and validate a sanitized read-only status briefing for the AI trading ChatGPT project and CarPlay while unattended PAPER observation continues unchanged.",
+    "primary_objective": "Validate the deployed sanitized read-only status briefing through the AI trading ChatGPT project and CarPlay while unattended PAPER observation continues unchanged.",
     "status": "ACTIVE"
   },
   "publication": {
@@ -171,7 +172,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "0b64b89493c58f4de1930f1042a06a55bfeabcec8335d5adcf17fa1b524dbeca",
+  "publication_fingerprint": "94ce92c73080f942ef617a823757867f0a4a2b7ae875a4a7d89b64fda6534c61",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -187,7 +188,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-27T22:15:03.048234+00:00",
+  "source_generated_at": "2026-08-27T22:29:12.517720+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -203,6 +204,8 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "No material canonical fields changed."
+    "commit_sha: '89768e1cb80d768eb3b84d618228cf9409f7e150' -> 'c7e3d968ea69bb713f42c19dac88156f1226c711'",
+    "ci: 'PASS' -> 'PENDING'",
+    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'UNKNOWN'"
   ]
 }
