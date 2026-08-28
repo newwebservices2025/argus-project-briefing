@@ -56,7 +56,7 @@
     "branch": "UNAVAILABLE",
     "ci": "PENDING",
     "ci_qualification": "EXACT_CLEAN_HEAD",
-    "commit": "f1f5461",
+    "commit": "1d2b84b",
     "test_health": "UNKNOWN",
     "working_tree": "clean"
   },
@@ -98,7 +98,7 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-28T14:09:25.101475+00:00",
+    "assessed_at": "2026-08-28T14:22:05.025558+00:00",
     "classification": "UNQUALIFIED",
     "completion_deadline": "2026-08-28T00:00:00-04:00",
     "completion_grace_seconds": 1800,
@@ -106,7 +106,7 @@
     "expected_cycle": "2026-08-27",
     "expected_run_at": "2026-08-27T23:30:00-04:00",
     "latest_receipt_commit": "f1f5461",
-    "latest_receipt_completed_at": "2026-08-28T14:07:45.058036+00:00",
+    "latest_receipt_completed_at": "2026-08-28T14:09:25.101475+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
@@ -173,7 +173,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "8f1c9fd5336c813226c004ef34b94183bf1177b2539067c1c39657dfc77c0128",
+  "publication_fingerprint": "19cdc45af67afd7f2505d22a4ec97944f88b7087e79a897d5616718c10ef9dd6",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -189,7 +189,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-28T14:09:25.101475+00:00",
+  "source_generated_at": "2026-08-28T14:22:05.025558+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": "UNAVAILABLE",
@@ -205,6 +205,6 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "nightly_project_state_cycle: 'MISSED' -> 'UNQUALIFIED'"
+    "commit_sha: 'f1f5461a79817bd915de44f7580cbf08c9607285' -> '1d2b84ba518d4869c24c155577b0cada0fa7dea8'"
   ]
 }
