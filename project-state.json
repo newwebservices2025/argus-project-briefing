@@ -35,7 +35,7 @@
     {
       "id": "research-intelligence",
       "name": "Research intelligence and observational learning",
-      "objective": "Operate and calibrate the merged research pipeline without execution authority.",
+      "objective": "Operate research-derived symbol investigation, measure forward outcomes, and surface advisory manual-review eligibility without execution authority.",
       "roadmap_issues": [
         96
       ],
@@ -43,7 +43,7 @@
     }
   ],
   "blockers": [
-    "Trading outcomes and strategy attribution are not yet sufficiently linked for performance claims.",
+    "Research-derived candidates have not yet accumulated the required outcome sample for performance or PAPER-readiness claims.",
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
@@ -53,10 +53,10 @@
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
-    "branch": "master",
-    "ci": "PENDING",
-    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
-    "commit": "c7e3d96",
+    "branch": "codex/research-paper-review-gate",
+    "ci": "UNKNOWN",
+    "ci_qualification": "UNAVAILABLE",
+    "commit": "a875e45",
     "test_health": "UNKNOWN",
     "working_tree": "dirty"
   },
@@ -91,21 +91,22 @@
     "PR #153 refreshed evidence-gated readiness and project-parts reporting."
   ],
   "next_recommended_work": [
-    "Review the first natural 23:30 task result, receipt, issue freshness, and next-morning briefing.",
-    "Confirm the synthetic GitHub Mobile notification and first scheduled 06:17 cloud monitor run.",
-    "Validate the AI trading project and CarPlay consumer against the public sanitized briefing without adding control authority.",
+    "Observe one natural weekday Bigdata heartbeat and verify bounded search, official SEC confirmation, idempotency, and zero execution authority.",
+    "Observe the committed post-PAPER investigation hook on a normal market day and verify that its failure cannot alter the PAPER result.",
+    "Let research-derived candidates accumulate the required enter-long outcomes at every configured horizon and inspect the advisory gate over natural market cycles.",
+    "When a candidate first becomes ELIGIBLE_FOR_REVIEW, prepare a separate human-reviewed PAPER proposal; do not activate it automatically.",
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-27T22:29:12.517720+00:00",
+    "assessed_at": "2026-08-28T03:30:01.632456+00:00",
     "classification": "UNQUALIFIED",
     "completion_deadline": "2026-08-27T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
     "expected_cycle": "2026-08-26",
     "expected_run_at": "2026-08-26T23:30:00-04:00",
-    "latest_receipt_commit": "89768e1",
-    "latest_receipt_completed_at": "2026-08-27T22:15:03.048234+00:00",
+    "latest_receipt_commit": "c7e3d96",
+    "latest_receipt_completed_at": "2026-08-27T22:29:12.517720+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
@@ -123,12 +124,13 @@
   "overall_project_status": "ATTENTION",
   "priorities": [
     {
-      "id": "project-state-voice-briefing-validation",
+      "id": "research-learning-loop",
       "rank": 1,
       "roadmap_issues": [
-        92
+        96,
+        90
       ],
-      "summary": "Validate the deployed sanitized public briefing through the \u201cArgus, status update\u201d CarPlay path."
+      "summary": "Accumulate research and PAPER outcome evidence and apply the advisory research-to-PAPER review gate without granting learning or research trading authority."
     },
     {
       "id": "sustained-paper-observation",
@@ -148,19 +150,18 @@
       "summary": "Accumulate actual PAPER lifecycle and control-by-control risk evidence."
     },
     {
-      "id": "strategy-economics",
+      "id": "project-state-voice-briefing-validation",
       "rank": 4,
       "roadmap_issues": [
-        90,
-        91
+        92
       ],
-      "summary": "Preserve strategy configuration while measuring outcomes and regime coverage."
+      "summary": "Complete user validation of the deployed read-only briefing and mobile notification surfaces."
     }
   ],
   "project": {
-    "current_phase": "PAPER evidence maturation and Project Intelligence Phase 8 voice briefing",
+    "current_phase": "PAPER evidence maturation and research-to-outcome learning",
     "name": "Argus / AI Trader",
-    "primary_objective": "Validate the deployed sanitized read-only status briefing through the AI trading ChatGPT project and CarPlay while unattended PAPER observation continues unchanged.",
+    "primary_objective": "Accumulate research-derived forward outcomes and PAPER execution outcomes, then surface evidence-qualified candidates for manual review while unattended PAPER observation continues unchanged.",
     "status": "ACTIVE"
   },
   "publication": {
@@ -172,7 +173,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "94ce92c73080f942ef617a823757867f0a4a2b7ae875a4a7d89b64fda6534c61",
+  "publication_fingerprint": "67f24e30fa142c15c571ed15b5af355ab7cd554469ead3196c6d92126c863b7e",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -188,13 +189,13 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-27T22:29:12.517720+00:00",
+  "source_generated_at": "2026-08-28T03:30:01.632456+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
-    "decision_count": 27,
+    "decision_count": 24,
     "direction": "FLAT",
-    "evidence_date": "2026-08-26",
+    "evidence_date": "2026-08-27",
     "fill_count": 0,
     "order_submission_count": 0,
     "realized_pnl": "UNAVAILABLE",
@@ -204,8 +205,9 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: '89768e1cb80d768eb3b84d618228cf9409f7e150' -> 'c7e3d968ea69bb713f42c19dac88156f1226c711'",
-    "ci: 'PASS' -> 'PENDING'",
-    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'UNKNOWN'"
+    "commit_sha: 'c7e3d968ea69bb713f42c19dac88156f1226c711' -> 'a875e45a52f88169dffec72fef7aa9c0742920ba'",
+    "ci: 'PENDING' -> 'UNKNOWN'",
+    "nightly_report_date: '2026-08-26' -> '2026-08-27'",
+    "priorities: ['project-state-voice-briefing-validation', 'sustained-paper-observation', 'broker-risk-evidence', 'strategy-economics'] -> ['research-learning-loop', 'sustained-paper-observation', 'broker-risk-evidence', 'project-state-voice-briefing-validation']"
   ]
 }
