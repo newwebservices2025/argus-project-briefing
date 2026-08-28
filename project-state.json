@@ -53,18 +53,18 @@
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
-    "branch": "codex/research-paper-review-gate",
-    "ci": "UNKNOWN",
-    "ci_qualification": "UNAVAILABLE",
-    "commit": "a875e45",
+    "branch": "UNAVAILABLE",
+    "ci": "PENDING",
+    "ci_qualification": "EXACT_CLEAN_HEAD",
+    "commit": "f1f5461",
     "test_health": "UNKNOWN",
-    "working_tree": "dirty"
+    "working_tree": "clean"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-08-27",
+    "publication_cycle": "2026-08-28",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -98,28 +98,28 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-28T03:30:01.632456+00:00",
-    "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-08-27T00:00:00-04:00",
+    "assessed_at": "2026-08-28T14:07:45.058036+00:00",
+    "classification": "MISSED",
+    "completion_deadline": "2026-08-28T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-08-26",
-    "expected_run_at": "2026-08-26T23:30:00-04:00",
-    "latest_receipt_commit": "c7e3d96",
-    "latest_receipt_completed_at": "2026-08-27T22:29:12.517720+00:00",
-    "latest_receipt_publication_action": "updated",
-    "latest_receipt_web_publication_action": "updated",
-    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
+    "expected_cycle": "2026-08-27",
+    "expected_run_at": "2026-08-27T23:30:00-04:00",
+    "latest_receipt_commit": "UNAVAILABLE",
+    "latest_receipt_completed_at": "UNAVAILABLE",
+    "latest_receipt_publication_action": "UNAVAILABLE",
+    "latest_receipt_web_publication_action": "UNAVAILABLE",
+    "reason": "No consolidation receipt covers the expected nightly slot.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "operator_summary": "ATTENTION",
-    "paper_safety": "VERIFIED",
-    "reliability": "SOFTWARE_FAILURE",
-    "reliability_assessment_date": "2026-08-27",
-    "reliability_execution_outcome": "SOFTWARE_FAILURE",
-    "reliability_inferred_cause": "NONE",
-    "watcher": "HEALTHY"
+    "operator_summary": "UNKNOWN",
+    "paper_safety": "UNESTABLISHED",
+    "reliability": "MISSED_EXPECTED_SLOT",
+    "reliability_assessment_date": "2026-08-28",
+    "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
+    "reliability_inferred_cause": "UNKNOWN",
+    "watcher": "UNKNOWN"
   },
   "overall_project_status": "ATTENTION",
   "priorities": [
@@ -173,7 +173,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "67f24e30fa142c15c571ed15b5af355ab7cd554469ead3196c6d92126c863b7e",
+  "publication_fingerprint": "bb0047abf8fbc9a134ece1152b43488a4f937679f04b51aa1d9c96e2fb3936fa",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -189,25 +189,22 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-28T03:30:01.632456+00:00",
+  "source_generated_at": "2026-08-28T14:07:45.058036+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
-    "daily_pnl": 0.0,
-    "decision_count": 24,
-    "direction": "FLAT",
-    "evidence_date": "2026-08-27",
-    "fill_count": 0,
-    "order_submission_count": 0,
+    "daily_pnl": "UNAVAILABLE",
+    "decision_count": "UNAVAILABLE",
+    "direction": "UNAVAILABLE",
+    "evidence_date": "UNAVAILABLE",
+    "fill_count": "UNAVAILABLE",
+    "order_submission_count": "UNAVAILABLE",
     "realized_pnl": "UNAVAILABLE",
-    "state": "PARTIAL",
+    "state": "UNAVAILABLE",
     "strategy_attribution": "NOT_ASSESSABLE",
-    "trade_thesis_outcome_linkage": "NONE",
+    "trade_thesis_outcome_linkage": "NOT_ASSESSABLE",
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'c7e3d968ea69bb713f42c19dac88156f1226c711' -> 'a875e45a52f88169dffec72fef7aa9c0742920ba'",
-    "ci: 'PENDING' -> 'UNKNOWN'",
-    "nightly_report_date: '2026-08-26' -> '2026-08-27'",
-    "priorities: ['project-state-voice-briefing-validation', 'sustained-paper-observation', 'broker-risk-evidence', 'strategy-economics'] -> ['research-learning-loop', 'sustained-paper-observation', 'broker-risk-evidence', 'project-state-voice-briefing-validation']"
+    "No previous canonical project-state snapshot was available."
   ]
 }
