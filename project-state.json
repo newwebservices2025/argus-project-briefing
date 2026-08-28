@@ -98,18 +98,18 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-28T14:07:45.058036+00:00",
-    "classification": "MISSED",
+    "assessed_at": "2026-08-28T14:09:25.101475+00:00",
+    "classification": "UNQUALIFIED",
     "completion_deadline": "2026-08-28T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
     "expected_cycle": "2026-08-27",
     "expected_run_at": "2026-08-27T23:30:00-04:00",
-    "latest_receipt_commit": "UNAVAILABLE",
-    "latest_receipt_completed_at": "UNAVAILABLE",
-    "latest_receipt_publication_action": "UNAVAILABLE",
-    "latest_receipt_web_publication_action": "UNAVAILABLE",
-    "reason": "No consolidation receipt covers the expected nightly slot.",
+    "latest_receipt_commit": "f1f5461",
+    "latest_receipt_completed_at": "2026-08-28T14:07:45.058036+00:00",
+    "latest_receipt_publication_action": "updated",
+    "latest_receipt_web_publication_action": "updated",
+    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
@@ -173,7 +173,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "bb0047abf8fbc9a134ece1152b43488a4f937679f04b51aa1d9c96e2fb3936fa",
+  "publication_fingerprint": "8f1c9fd5336c813226c004ef34b94183bf1177b2539067c1c39657dfc77c0128",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -189,7 +189,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-28T14:07:45.058036+00:00",
+  "source_generated_at": "2026-08-28T14:09:25.101475+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": "UNAVAILABLE",
@@ -205,6 +205,6 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "No previous canonical project-state snapshot was available."
+    "nightly_project_state_cycle: 'MISSED' -> 'UNQUALIFIED'"
   ]
 }
