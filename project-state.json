@@ -48,7 +48,6 @@
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
-    "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
     "Review the nightly project-state cycle evidence before relying on the morning briefing.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
@@ -69,7 +68,7 @@
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
-  "highest_value_next_action": "Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.",
+  "highest_value_next_action": "Investigate the nightly project-state publication evidence without changing trading runtime.",
   "known_risks": [
     "Tracked prose can lag GitHub issue and Project state.",
     "Existing reports have overlapping names but different authority and scope.",
@@ -99,26 +98,26 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-28T14:37:45.633418+00:00",
+    "assessed_at": "2026-08-29T03:30:01.638368+00:00",
     "classification": "UNQUALIFIED",
     "completion_deadline": "2026-08-28T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
     "expected_cycle": "2026-08-27",
     "expected_run_at": "2026-08-27T23:30:00-04:00",
-    "latest_receipt_commit": "a875e45",
-    "latest_receipt_completed_at": "2026-08-28T03:30:01.632456+00:00",
+    "latest_receipt_commit": "91a5501",
+    "latest_receipt_completed_at": "2026-08-28T14:37:45.633418+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
+    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
     "operator_summary": "ATTENTION",
     "paper_safety": "VERIFIED",
-    "reliability": "UNKNOWN",
+    "reliability": "SUCCESS",
     "reliability_assessment_date": "2026-08-28",
-    "reliability_execution_outcome": "UNKNOWN",
+    "reliability_execution_outcome": "SUCCESS",
     "reliability_inferred_cause": "NONE",
     "watcher": "HEALTHY"
   },
@@ -174,7 +173,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "dd6810afc4ad8e99b1a32f3bee7a0eb22f60a4a0d41e3243461a3b6b2bedad5d",
+  "publication_fingerprint": "7d8e35c0d6947ac3260fae4016fc2adbc25ce22df3c31ae9d75aaf753bab5384",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -190,13 +189,13 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-28T14:37:45.633418+00:00",
+  "source_generated_at": "2026-08-29T03:30:01.638368+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
-    "decision_count": 24,
+    "decision_count": 26,
     "direction": "FLAT",
-    "evidence_date": "2026-08-27",
+    "evidence_date": "2026-08-28",
     "fill_count": 0,
     "order_submission_count": 0,
     "realized_pnl": "UNAVAILABLE",
@@ -206,7 +205,6 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'a875e45a52f88169dffec72fef7aa9c0742920ba' -> '91a550102aff94afcb6628dea8de34d95dc407ad'",
-    "nightly_project_state_expected_cycle: '2026-08-26' -> '2026-08-27'"
+    "nightly_report_date: '2026-08-27' -> '2026-08-28'"
   ]
 }

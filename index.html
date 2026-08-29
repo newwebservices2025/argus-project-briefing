@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, nofollow, noarchive">
+  <meta name="robots" content="noindex, nofollow, noarchive">
   <title>Argus status update</title>
   <style>
     :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
@@ -23,7 +23,7 @@
 <main>
   <h1>Argus status update</h1>
   <p class="meta">Voice command: <strong>Argus, status update</strong></p>
-  <p class="meta">Sanitized snapshot generated: <time>2026-08-28T14:37:45.633418+00:00</time>. Expected cadence:
+  <p class="meta">Sanitized snapshot generated: <time>2026-08-29T03:30:01.638368+00:00</time>. Expected cadence:
     NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE; stale after
     UNAVAILABLE seconds.</p>
   <p class="status"><strong>Overall:</strong> ATTENTION</p>
@@ -32,8 +32,7 @@
 
   <section>
     <h2>What changed</h2>
-    <ul><li>commit_sha: &#x27;a875e45a52f88169dffec72fef7aa9c0742920ba&#x27; -&gt; &#x27;91a550102aff94afcb6628dea8de34d95dc407ad&#x27;</li>
-<li>nightly_project_state_expected_cycle: &#x27;2026-08-26&#x27; -&gt; &#x27;2026-08-27&#x27;</li></ul>
+    <ul><li>nightly_report_date: &#x27;2026-08-27&#x27; -&gt; &#x27;2026-08-28&#x27;</li></ul>
   </section>
 
   <section>
@@ -41,7 +40,7 @@
     <dl><dt>Operator</dt><dd>ATTENTION</dd>
 <dt>PAPER safety</dt><dd>VERIFIED</dd>
 <dt>Watcher</dt><dd>HEALTHY</dd>
-<dt>Market-cycle reliability</dt><dd>UNKNOWN</dd>
+<dt>Market-cycle reliability</dt><dd>SUCCESS</dd>
 <dt>Reliability evidence date</dt><dd>2026-08-28</dd>
 <dt>Nightly project-state cycle</dt><dd>UNQUALIFIED</dd>
 <dt>Expected nightly cycle</dt><dd>2026-08-27</dd>
@@ -51,7 +50,7 @@
   <section>
     <h2>Trading intelligence</h2>
     <dl><dt>Status</dt><dd>PARTIAL</dd>
-<dt>Evidence date</dt><dd>2026-08-27</dd>
+<dt>Evidence date</dt><dd>2026-08-28</dd>
 <dt>Daily PAPER P&amp;L</dt><dd>UNAVAILABLE</dd>
 <dt>Realized P&amp;L</dt><dd>UNAVAILABLE</dd>
 <dt>Unrealized P&amp;L</dt><dd>UNAVAILABLE</dd>
@@ -82,13 +81,12 @@
 
   <section>
     <h2>Highest-value next action</h2>
-    <p>Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.</p>
+    <p>Investigate the nightly project-state publication evidence without changing trading runtime.</p>
   </section>
 
   <section>
     <h2>Dan's attention</h2>
-    <ul><li>Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot&#x27;s evidence.</li>
-<li>Review the nightly project-state cycle evidence before relying on the morning briefing.</li>
+    <ul><li>Review the nightly project-state cycle evidence before relying on the morning briefing.</li>
 <li>In the AI trading project on CarPlay, say “Argus, status update” and confirm the response cites fresh canonical evidence rather than conversational memory.</li>
 <li>Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox.</li></ul>
   </section>
