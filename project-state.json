@@ -34,17 +34,17 @@
     },
     {
       "id": "research-intelligence",
-      "name": "Research intelligence and observational learning",
-      "objective": "Operate frequent research discovery, capture pre-trade shadow context, measure forward outcomes, and surface advisory manual-review eligibility without execution authority.",
+      "name": "Predictive research-to-PAPER learning",
+      "objective": "Select a small research-derived PAPER universe, measure ex-ante predictions against later outcomes, and attach completed PAPER fills to the existing learning store while preserving every normal safety gate.",
       "roadmap_issues": [
         96
       ],
-      "status": "ACTIVE_RESEARCH_ONLY"
+      "status": "IMPLEMENTED_PENDING_NATURAL_MARKET_ACCEPTANCE"
     }
   ],
   "blockers": [
     "Research-derived candidates have not yet accumulated the required outcome sample for performance or PAPER-readiness claims.",
-    "The pre-trade bridge has no natural-cycle counterfactual history yet, so it cannot receive PAPER decision authority.",
+    "The newly authorized dynamic PAPER universe has not yet completed a natural market cycle, prediction calibration, or filled round trip.",
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
@@ -56,7 +56,7 @@
     "branch": "codex/pretrade-research-context-shadow",
     "ci": "UNKNOWN",
     "ci_qualification": "UNAVAILABLE",
-    "commit": "91a5501",
+    "commit": "5ab6d29",
     "test_health": "UNKNOWN",
     "working_tree": "dirty"
   },
@@ -64,7 +64,7 @@
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-08-28",
+    "publication_cycle": "2026-08-29",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -79,6 +79,7 @@
     "The voice briefing allowlist is publicly accessible; future field additions require explicit privacy and safety review."
   ],
   "latest_completed_work": [
+    "A fail-closed dynamic PAPER universe now uses fresh pre-trade research and ex-ante predictions while the normal strategy, freshness, RiskRules, PAPER account proof, and lifecycle remain authoritative; future outcomes calibrate the predictor without lookahead.",
     "The sanitized public Pages mirror was deployed, qualified against a successful publication receipt, and wired into the AI trading project instructions.",
     "The bounded watcher reload preserved its task and safety contracts and began recording healthy cadence and freshness incidents with no pending delivery.",
     "Consumer-time nightly cadence detection now distinguishes on-time, late, missed, failed, unqualified, and unknown cycles independently of snapshot age.",
@@ -87,37 +88,37 @@
     "A schedule-ready but unregistered consolidation command now records freshness and publication receipts.",
     "Issue #154 became the sanitized, idempotent, read-only cross-device project briefing.",
     "A versioned, evidence-ranked project-state JSON contract and briefing renderer were implemented and validated.",
-    "August 25 was accepted as a single-day unattended PAPER evidence PASS.",
-    "PR #153 refreshed evidence-gated readiness and project-parts reporting."
+    "August 25 was accepted as a single-day unattended PAPER evidence PASS."
   ],
   "next_recommended_work": [
-    "Observe pre-trade contexts and post-trade counterfactual outcomes across normal scheduled PAPER cycles, including shadow failure isolation.",
+    "Confirm Monday's first natural cycle preserves a research selection receipt, exact PAPER proof, normal risk decision, and an explicit result without falling back to static symbols.",
+    "Join only later research outcomes to the time-frozen predictions and inspect sample count, Brier score, realized hit rate, and average return separately for predictive and exploration selections.",
     "Observe the committed post-PAPER investigation hook on a normal market day and verify that its failure cannot alter the PAPER result.",
     "Let research-derived candidates accumulate the required enter-long outcomes at every configured horizon and inspect the advisory gate over natural market cycles.",
-    "When a candidate first becomes ELIGIBLE_FOR_REVIEW, prepare a separate human-reviewed PAPER proposal; do not activate it automatically.",
+    "When a candidate first clears the predictive threshold, compare its time-frozen forecast with later market and filled-trade outcomes before changing any model or threshold.",
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-29T03:30:01.638368+00:00",
+    "assessed_at": "2026-08-29T14:44:06.710584+00:00",
     "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-08-28T00:00:00-04:00",
+    "completion_deadline": "2026-08-29T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-08-27",
-    "expected_run_at": "2026-08-27T23:30:00-04:00",
+    "expected_cycle": "2026-08-28",
+    "expected_run_at": "2026-08-28T23:30:00-04:00",
     "latest_receipt_commit": "91a5501",
-    "latest_receipt_completed_at": "2026-08-28T14:37:45.633418+00:00",
+    "latest_receipt_completed_at": "2026-08-29T03:30:01.638368+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
+    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
     "operator_summary": "ATTENTION",
-    "paper_safety": "VERIFIED",
-    "reliability": "SUCCESS",
-    "reliability_assessment_date": "2026-08-28",
-    "reliability_execution_outcome": "SUCCESS",
+    "paper_safety": "VERIFIED_LAST_MARKET_DAY",
+    "reliability": "EXPECTED_SKIP",
+    "reliability_assessment_date": "2026-08-29",
+    "reliability_execution_outcome": "EXPECTED_SKIP",
     "reliability_inferred_cause": "NONE",
     "watcher": "HEALTHY"
   },
@@ -130,7 +131,7 @@
         96,
         90
       ],
-      "summary": "Measure same-day pre-trade research coverage and accumulate research and PAPER outcomes without granting learning or research trading authority."
+      "summary": "Validate the first natural dynamic PAPER selection, decision, and later-only prediction outcome with no static-symbol fallback."
     },
     {
       "id": "sustained-paper-observation",
@@ -138,7 +139,7 @@
       "roadmap_issues": [
         87
       ],
-      "summary": "Continue normal unattended PAPER evidence collection and daily reconciliation."
+      "summary": "Continue unattended PAPER evidence collection, daily equity-return preservation, and broker reconciliation."
     },
     {
       "id": "broker-risk-evidence",
@@ -159,9 +160,9 @@
     }
   ],
   "project": {
-    "current_phase": "PAPER evidence maturation and pre-trade research shadowing",
+    "current_phase": "Predictive research-derived PAPER learning loop",
     "name": "Argus / AI Trader",
-    "primary_objective": "Capture fresh research before each eligible PAPER decision, measure its hypothetical decision impact, and accumulate research and PAPER outcomes while unattended PAPER execution remains unchanged.",
+    "primary_objective": "Select a bounded PAPER evaluation universe from fresh time-frozen research, preserve normal strategy and risk authority, and calibrate predictions and completed trade outcomes without any static-symbol fallback or LIVE authority.",
     "status": "ACTIVE"
   },
   "publication": {
@@ -173,7 +174,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "7d8e35c0d6947ac3260fae4016fc2adbc25ce22df3c31ae9d75aaf753bab5384",
+  "publication_fingerprint": "648211a7e2423db54f3b1367d85ff251a51e99d6bc8b6564b37a78be6306bd6e",
   "roadmap": {
     "active_item_count": 14,
     "done_item_count": 15,
@@ -189,7 +190,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-29T03:30:01.638368+00:00",
+  "source_generated_at": "2026-08-29T14:44:06.710584+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -205,6 +206,8 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "nightly_report_date: '2026-08-27' -> '2026-08-28'"
+    "commit_sha: '91a550102aff94afcb6628dea8de34d95dc407ad' -> '5ab6d29f5e721be29af3748499a98eb48e82f832'",
+    "paper_safety: 'VERIFIED' -> 'VERIFIED_LAST_MARKET_DAY'",
+    "nightly_project_state_expected_cycle: '2026-08-27' -> '2026-08-28'"
   ]
 }
