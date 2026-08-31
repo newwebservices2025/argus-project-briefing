@@ -63,18 +63,18 @@
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
-    "branch": "codex/fresh-mobile-notification-test",
-    "ci": "UNKNOWN",
-    "ci_qualification": "UNAVAILABLE",
-    "commit": "921d1d8",
-    "test_health": "UNKNOWN",
-    "working_tree": "dirty"
+    "branch": "codex/consolidate-pillar-gaps",
+    "ci": "PASS",
+    "ci_qualification": "EXACT_CLEAN_HEAD",
+    "commit": "cc8d6ca",
+    "test_health": "PASS_FOR_EXACT_CLEAN_HEAD",
+    "working_tree": "clean"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-08-29",
+    "publication_cycle": "2026-08-30",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -113,25 +113,25 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-30T03:30:01.637089+00:00",
+    "assessed_at": "2026-08-31T03:30:01.680916+00:00",
     "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-08-29T00:00:00-04:00",
+    "completion_deadline": "2026-08-30T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-08-28",
-    "expected_run_at": "2026-08-28T23:30:00-04:00",
-    "latest_receipt_commit": "5ab6d29",
-    "latest_receipt_completed_at": "2026-08-29T14:44:06.710584+00:00",
+    "expected_cycle": "2026-08-29",
+    "expected_run_at": "2026-08-29T23:30:00-04:00",
+    "latest_receipt_commit": "921d1d8",
+    "latest_receipt_completed_at": "2026-08-30T03:30:01.637089+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
+    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "operator_summary": "ATTENTION",
-    "paper_safety": "VERIFIED",
+    "operator_summary": "HEALTHY",
+    "paper_safety": "UNESTABLISHED",
     "reliability": "EXPECTED_SKIP",
-    "reliability_assessment_date": "2026-08-29",
+    "reliability_assessment_date": "2026-08-30",
     "reliability_execution_outcome": "EXPECTED_SKIP",
     "reliability_inferred_cause": "NONE",
     "watcher": "HEALTHY"
@@ -196,7 +196,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "77f86ec185c030271370346bf3e426950811559de90f9d3abef1693a4452c5e5",
+  "publication_fingerprint": "5c65263fde164ff031e52a7bd6ed08e8ba6ff16eb54ce565103de286cf7a5daf",
   "roadmap": {
     "active_item_count": 15,
     "done_item_count": 15,
@@ -212,7 +212,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-30T03:30:01.637089+00:00",
+  "source_generated_at": "2026-08-31T03:30:01.680916+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -224,13 +224,13 @@
     "realized_pnl": "UNAVAILABLE",
     "state": "PARTIAL",
     "strategy_attribution": "NOT_ASSESSABLE",
-    "trade_thesis_outcome_linkage": "NONE",
+    "trade_thesis_outcome_linkage": "PARTIAL",
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: '5ab6d29f5e721be29af3748499a98eb48e82f832' -> '921d1d8e95e85d067b74e86f7bdd1fc27ea10f93'",
-    "paper_safety: 'VERIFIED_LAST_MARKET_DAY' -> 'VERIFIED'",
-    "roadmap_active: 14 -> 15",
-    "priorities: ['research-learning-loop', 'sustained-paper-observation', 'broker-risk-evidence', 'project-state-voice-briefing-validation'] -> ['research-learning-loop', 'tip-shadow-paper-probe', 'sustained-paper-observation', 'broker-risk-evidence', 'project-state-voice-briefing-validation']"
+    "commit_sha: '2e896db25a9f771ffc2b7ec7f9fd1108301ea479' -> 'cc8d6cad71032f83f5d1560e0a36c382fddfd2c0'",
+    "working_tree: 'dirty' -> 'clean'",
+    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'PASS_FOR_EXACT_CLEAN_HEAD'",
+    "operator_summary: 'ATTENTION' -> 'HEALTHY'"
   ]
 }
