@@ -24,7 +24,7 @@
   <h1>Argus status update</h1>
   <p class="meta">Status command: <strong>Argus, status update</strong></p>
   <p class="meta">Morning command: <strong>Argus, morning brief: evaluate yesterday&#x27;s PAPER performance, explain what worked and failed, then give today&#x27;s top three priorities.</strong></p>
-  <p class="meta">Sanitized snapshot generated: <time>2026-08-31T03:30:01.680916+00:00</time>. Expected cadence:
+  <p class="meta">Sanitized snapshot generated: <time>2026-09-01T03:30:01.702391+00:00</time>. Expected cadence:
     NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE; stale after
     UNAVAILABLE seconds.</p>
   <p class="status"><strong>Overall:</strong> ATTENTION</p>
@@ -33,28 +33,29 @@
 
   <section>
     <h2>What changed</h2>
-    <ul><li>commit_sha: &#x27;2e896db25a9f771ffc2b7ec7f9fd1108301ea479&#x27; -&gt; &#x27;cc8d6cad71032f83f5d1560e0a36c382fddfd2c0&#x27;</li>
-<li>working_tree: &#x27;dirty&#x27; -&gt; &#x27;clean&#x27;</li>
-<li>test_health: &#x27;UNKNOWN_FOR_UNCOMMITTED_WORKTREE&#x27; -&gt; &#x27;PASS_FOR_EXACT_CLEAN_HEAD&#x27;</li>
-<li>operator_summary: &#x27;ATTENTION&#x27; -&gt; &#x27;HEALTHY&#x27;</li></ul>
+    <ul><li>commit_sha: &#x27;cc8d6cad71032f83f5d1560e0a36c382fddfd2c0&#x27; -&gt; &#x27;d8e3ee35bd6c600601e50f9f68181079fd363ff3&#x27;</li>
+<li>operator_summary: &#x27;HEALTHY&#x27; -&gt; &#x27;ATTENTION&#x27;</li>
+<li>nightly_report_date: &#x27;2026-08-30&#x27; -&gt; &#x27;2026-08-31&#x27;</li>
+<li>nightly_project_state_cycle: &#x27;UNQUALIFIED&#x27; -&gt; &#x27;ON_TIME_SUCCESS&#x27;</li>
+<li>nightly_project_state_expected_cycle: &#x27;2026-08-29&#x27; -&gt; &#x27;2026-08-30&#x27;</li></ul>
   </section>
 
   <section>
     <h2>Argus and PAPER operations</h2>
-    <dl><dt>Operator</dt><dd>HEALTHY</dd>
+    <dl><dt>Operator</dt><dd>ATTENTION</dd>
 <dt>PAPER safety</dt><dd>UNESTABLISHED</dd>
 <dt>Watcher</dt><dd>HEALTHY</dd>
-<dt>Market-cycle reliability</dt><dd>EXPECTED_SKIP</dd>
-<dt>Reliability evidence date</dt><dd>2026-08-30</dd>
-<dt>Nightly project-state cycle</dt><dd>UNQUALIFIED</dd>
-<dt>Expected nightly cycle</dt><dd>2026-08-29</dd>
+<dt>Market-cycle reliability</dt><dd>SOFTWARE_FAILURE</dd>
+<dt>Reliability evidence date</dt><dd>2026-08-31</dd>
+<dt>Nightly project-state cycle</dt><dd>ON_TIME_SUCCESS</dd>
+<dt>Expected nightly cycle</dt><dd>2026-08-30</dd>
 <dt>Public voice mirror</dt><dd>updated</dd></dl>
   </section>
 
   <section>
     <h2>Trading intelligence</h2>
     <dl><dt>Status</dt><dd>PARTIAL</dd>
-<dt>Evidence date</dt><dd>2026-08-28</dd>
+<dt>Evidence date</dt><dd>2026-08-31</dd>
 <dt>Daily PAPER P&amp;L</dt><dd>UNAVAILABLE</dd>
 <dt>Realized P&amp;L</dt><dd>UNAVAILABLE</dd>
 <dt>Unrealized P&amp;L</dt><dd>UNAVAILABLE</dd>
@@ -64,7 +65,7 @@
 
   <section>
     <h2>Engineering and roadmap</h2>
-    <dl><dt>Git</dt><dd>codex/consolidate-pillar-gaps@cc8d6ca</dd>
+    <dl><dt>Git</dt><dd>codex/consolidate-pillar-gaps@d8e3ee3</dd>
 <dt>Working tree</dt><dd>clean</dd>
 <dt>CI</dt><dd>PASS</dd>
 <dt>Tests</dt><dd>PASS_FOR_EXACT_CLEAN_HEAD</dd>
@@ -85,12 +86,12 @@
 
   <section>
     <h2>Highest-value next action</h2>
-    <p>Investigate the nightly project-state publication evidence without changing trading runtime.</p>
+    <p>Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.</p>
   </section>
 
   <section>
     <h2>Dan's attention</h2>
-    <ul><li>Review the nightly project-state cycle evidence before relying on the morning briefing.</li>
+    <ul><li>Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot&#x27;s evidence.</li>
 <li>In the AI trading project on CarPlay, say “Argus, status update” and confirm the response cites fresh canonical evidence rather than conversational memory.</li>
 <li>Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox.</li></ul>
   </section>

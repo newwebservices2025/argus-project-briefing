@@ -58,7 +58,7 @@
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
-    "Review the nightly project-state cycle evidence before relying on the morning briefing.",
+    "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
@@ -66,7 +66,7 @@
     "branch": "codex/consolidate-pillar-gaps",
     "ci": "PASS",
     "ci_qualification": "EXACT_CLEAN_HEAD",
-    "commit": "cc8d6ca",
+    "commit": "d8e3ee3",
     "test_health": "PASS_FOR_EXACT_CLEAN_HEAD",
     "working_tree": "clean"
   },
@@ -74,11 +74,11 @@
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-08-30",
+    "publication_cycle": "2026-08-31",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
-  "highest_value_next_action": "Investigate the nightly project-state publication evidence without changing trading runtime.",
+  "highest_value_next_action": "Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.",
   "known_risks": [
     "The script directory remains large because specialized evidence tooling is retained; the lifecycle manifest prevents new unclassified entrypoints and the 17 ignored backup artifacts now reside in a dated non-executable archive.",
     "The TIP bridge is an unvalidated one-share PAPER experiment; shadow evidence and confidence must never bypass normal freshness, risk, account, lifecycle, or reconciliation controls.",
@@ -110,29 +110,30 @@
     "Observe the committed post-PAPER investigation hook on a normal market day and verify that its failure cannot alter the PAPER result.",
     "Let research-derived candidates accumulate the required enter-long outcomes at every configured horizon and inspect the advisory gate over natural market cycles.",
     "When a candidate first clears the predictive threshold, compare its time-frozen forecast with later market and filled-trade outcomes before changing any model or threshold.",
-    "Continue issue #87 sustained PAPER observation without changing the active runtime."
+    "Continue issue #87 sustained PAPER observation without changing the active runtime.",
+    "Only after a concrete engineering-workflow need is established, evaluate the Codex SDK for scripted automation or Codex App Server for interactive integration in a non-production environment; do not use codex mcp-server, depend on Tailscale/Aperture, or connect engineering control to broker, scheduler, credential, or trading-runtime authority."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-08-31T03:30:01.680916+00:00",
-    "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-08-30T00:00:00-04:00",
+    "assessed_at": "2026-09-01T03:30:01.702391+00:00",
+    "classification": "ON_TIME_SUCCESS",
+    "completion_deadline": "2026-08-31T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-08-29",
-    "expected_run_at": "2026-08-29T23:30:00-04:00",
-    "latest_receipt_commit": "921d1d8",
-    "latest_receipt_completed_at": "2026-08-30T03:30:01.637089+00:00",
+    "expected_cycle": "2026-08-30",
+    "expected_run_at": "2026-08-30T23:30:00-04:00",
+    "latest_receipt_commit": "cc8d6ca",
+    "latest_receipt_completed_at": "2026-08-31T03:30:01.680916+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
+    "reason": "A qualified receipt completed within the expected nightly window.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "operator_summary": "HEALTHY",
+    "operator_summary": "ATTENTION",
     "paper_safety": "UNESTABLISHED",
-    "reliability": "EXPECTED_SKIP",
-    "reliability_assessment_date": "2026-08-30",
-    "reliability_execution_outcome": "EXPECTED_SKIP",
+    "reliability": "SOFTWARE_FAILURE",
+    "reliability_assessment_date": "2026-08-31",
+    "reliability_execution_outcome": "SOFTWARE_FAILURE",
     "reliability_inferred_cause": "NONE",
     "watcher": "HEALTHY"
   },
@@ -196,7 +197,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "5c65263fde164ff031e52a7bd6ed08e8ba6ff16eb54ce565103de286cf7a5daf",
+  "publication_fingerprint": "d926983cdfbbb570860805dd889c5ff4d16d2f534679a8f96561a021f77f66df",
   "roadmap": {
     "active_item_count": 15,
     "done_item_count": 15,
@@ -212,15 +213,15 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-08-31T03:30:01.680916+00:00",
+  "source_generated_at": "2026-09-01T03:30:01.702391+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
-    "decision_count": 26,
+    "decision_count": "UNAVAILABLE",
     "direction": "FLAT",
-    "evidence_date": "2026-08-28",
-    "fill_count": 0,
-    "order_submission_count": 0,
+    "evidence_date": "2026-08-31",
+    "fill_count": "UNAVAILABLE",
+    "order_submission_count": "UNAVAILABLE",
     "realized_pnl": "UNAVAILABLE",
     "state": "PARTIAL",
     "strategy_attribution": "NOT_ASSESSABLE",
@@ -228,9 +229,10 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: '2e896db25a9f771ffc2b7ec7f9fd1108301ea479' -> 'cc8d6cad71032f83f5d1560e0a36c382fddfd2c0'",
-    "working_tree: 'dirty' -> 'clean'",
-    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'PASS_FOR_EXACT_CLEAN_HEAD'",
-    "operator_summary: 'ATTENTION' -> 'HEALTHY'"
+    "commit_sha: 'cc8d6cad71032f83f5d1560e0a36c382fddfd2c0' -> 'd8e3ee35bd6c600601e50f9f68181079fd363ff3'",
+    "operator_summary: 'HEALTHY' -> 'ATTENTION'",
+    "nightly_report_date: '2026-08-30' -> '2026-08-31'",
+    "nightly_project_state_cycle: 'UNQUALIFIED' -> 'ON_TIME_SUCCESS'",
+    "nightly_project_state_expected_cycle: '2026-08-29' -> '2026-08-30'"
   ]
 }
