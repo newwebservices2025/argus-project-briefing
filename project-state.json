@@ -59,22 +59,23 @@
   ],
   "dan_attention": [
     "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
+    "Review the nightly project-state cycle evidence before relying on the morning briefing.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
     "branch": "codex/consolidate-pillar-gaps",
     "ci": "PASS",
-    "ci_qualification": "EXACT_CLEAN_HEAD",
-    "commit": "d8e3ee3",
-    "test_health": "PASS_FOR_EXACT_CLEAN_HEAD",
-    "working_tree": "clean"
+    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
+    "commit": "52a9480",
+    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
+    "working_tree": "dirty"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-08-31",
+    "publication_cycle": "2026-09-02",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -114,30 +115,30 @@
     "Only after a concrete engineering-workflow need is established, evaluate the Codex SDK for scripted automation or Codex App Server for interactive integration in a non-production environment; do not use codex mcp-server, depend on Tailscale/Aperture, or connect engineering control to broker, scheduler, credential, or trading-runtime authority."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-01T03:30:01.702391+00:00",
-    "classification": "ON_TIME_SUCCESS",
-    "completion_deadline": "2026-08-31T00:00:00-04:00",
+    "assessed_at": "2026-09-02T23:06:53.769405+00:00",
+    "classification": "MISSED",
+    "completion_deadline": "2026-09-02T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-08-30",
-    "expected_run_at": "2026-08-30T23:30:00-04:00",
-    "latest_receipt_commit": "cc8d6ca",
-    "latest_receipt_completed_at": "2026-08-31T03:30:01.680916+00:00",
+    "expected_cycle": "2026-09-01",
+    "expected_run_at": "2026-09-01T23:30:00-04:00",
+    "latest_receipt_commit": "d8e3ee3",
+    "latest_receipt_completed_at": "2026-09-01T03:30:01.702391+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "A qualified receipt completed within the expected nightly window.",
+    "reason": "The latest receipt predates the expected nightly slot.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "operator_summary": "ATTENTION",
-    "paper_safety": "UNESTABLISHED",
-    "reliability": "SOFTWARE_FAILURE",
-    "reliability_assessment_date": "2026-08-31",
-    "reliability_execution_outcome": "SOFTWARE_FAILURE",
-    "reliability_inferred_cause": "NONE",
+    "operator_summary": "SAFETY BLOCK",
+    "paper_safety": "VIOLATION",
+    "reliability": "LIKELY_HOST_UNAVAILABLE",
+    "reliability_assessment_date": "2026-09-02",
+    "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
+    "reliability_inferred_cause": "LIKELY_HOST_UNAVAILABLE",
     "watcher": "HEALTHY"
   },
-  "overall_project_status": "ATTENTION",
+  "overall_project_status": "SAFETY_BLOCK",
   "priorities": [
     {
       "id": "research-learning-loop",
@@ -197,7 +198,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "d926983cdfbbb570860805dd889c5ff4d16d2f534679a8f96561a021f77f66df",
+  "publication_fingerprint": "b1e85f21581b42fe0dec58ffad0ef79e198427770c26d6e1010dc8844190f5e4",
   "roadmap": {
     "active_item_count": 15,
     "done_item_count": 15,
@@ -213,15 +214,15 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-01T03:30:01.702391+00:00",
+  "source_generated_at": "2026-09-02T23:06:53.769405+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
-    "decision_count": "UNAVAILABLE",
+    "decision_count": 0,
     "direction": "FLAT",
-    "evidence_date": "2026-08-31",
-    "fill_count": "UNAVAILABLE",
-    "order_submission_count": "UNAVAILABLE",
+    "evidence_date": "2026-09-02",
+    "fill_count": 0,
+    "order_submission_count": 0,
     "realized_pnl": "UNAVAILABLE",
     "state": "PARTIAL",
     "strategy_attribution": "NOT_ASSESSABLE",
@@ -229,10 +230,13 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'cc8d6cad71032f83f5d1560e0a36c382fddfd2c0' -> 'd8e3ee35bd6c600601e50f9f68181079fd363ff3'",
-    "operator_summary: 'HEALTHY' -> 'ATTENTION'",
-    "nightly_report_date: '2026-08-30' -> '2026-08-31'",
-    "nightly_project_state_cycle: 'UNQUALIFIED' -> 'ON_TIME_SUCCESS'",
-    "nightly_project_state_expected_cycle: '2026-08-29' -> '2026-08-30'"
+    "commit_sha: 'd8e3ee35bd6c600601e50f9f68181079fd363ff3' -> '52a9480f57cf058211ad34ac33a21091e773ac29'",
+    "working_tree: 'clean' -> 'dirty'",
+    "test_health: 'PASS_FOR_EXACT_CLEAN_HEAD' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
+    "operator_summary: 'ATTENTION' -> 'SAFETY BLOCK'",
+    "paper_safety: 'UNESTABLISHED' -> 'VIOLATION'",
+    "nightly_report_date: '2026-08-31' -> '2026-09-02'",
+    "nightly_project_state_cycle: 'ON_TIME_SUCCESS' -> 'MISSED'",
+    "nightly_project_state_expected_cycle: '2026-08-30' -> '2026-09-01'"
   ]
 }
