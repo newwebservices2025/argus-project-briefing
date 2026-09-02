@@ -115,30 +115,30 @@
     "Only after a concrete engineering-workflow need is established, evaluate the Codex SDK for scripted automation or Codex App Server for interactive integration in a non-production environment; do not use codex mcp-server, depend on Tailscale/Aperture, or connect engineering control to broker, scheduler, credential, or trading-runtime authority."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-02T23:06:53.769405+00:00",
-    "classification": "MISSED",
+    "assessed_at": "2026-09-02T23:11:12.230311+00:00",
+    "classification": "UNQUALIFIED",
     "completion_deadline": "2026-09-02T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
     "expected_cycle": "2026-09-01",
     "expected_run_at": "2026-09-01T23:30:00-04:00",
-    "latest_receipt_commit": "d8e3ee3",
-    "latest_receipt_completed_at": "2026-09-01T03:30:01.702391+00:00",
+    "latest_receipt_commit": "52a9480",
+    "latest_receipt_completed_at": "2026-09-02T23:06:53.769405+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "The latest receipt predates the expected nightly slot.",
+    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "operator_summary": "SAFETY BLOCK",
-    "paper_safety": "VIOLATION",
+    "operator_summary": "ATTENTION",
+    "paper_safety": "UNESTABLISHED",
     "reliability": "LIKELY_HOST_UNAVAILABLE",
     "reliability_assessment_date": "2026-09-02",
     "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
     "reliability_inferred_cause": "LIKELY_HOST_UNAVAILABLE",
     "watcher": "HEALTHY"
   },
-  "overall_project_status": "SAFETY_BLOCK",
+  "overall_project_status": "ATTENTION",
   "priorities": [
     {
       "id": "research-learning-loop",
@@ -198,7 +198,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "b1e85f21581b42fe0dec58ffad0ef79e198427770c26d6e1010dc8844190f5e4",
+  "publication_fingerprint": "92ed6e31586e21e1dfc3b999e12b1108af22c6e16217b02b25462416d31c6756",
   "roadmap": {
     "active_item_count": 15,
     "done_item_count": 15,
@@ -214,7 +214,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-02T23:06:53.769405+00:00",
+  "source_generated_at": "2026-09-02T23:11:12.230311+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -230,13 +230,8 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'd8e3ee35bd6c600601e50f9f68181079fd363ff3' -> '52a9480f57cf058211ad34ac33a21091e773ac29'",
-    "working_tree: 'clean' -> 'dirty'",
-    "test_health: 'PASS_FOR_EXACT_CLEAN_HEAD' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
-    "operator_summary: 'ATTENTION' -> 'SAFETY BLOCK'",
-    "paper_safety: 'UNESTABLISHED' -> 'VIOLATION'",
-    "nightly_report_date: '2026-08-31' -> '2026-09-02'",
-    "nightly_project_state_cycle: 'ON_TIME_SUCCESS' -> 'MISSED'",
-    "nightly_project_state_expected_cycle: '2026-08-30' -> '2026-09-01'"
+    "operator_summary: 'SAFETY BLOCK' -> 'ATTENTION'",
+    "paper_safety: 'VIOLATION' -> 'UNESTABLISHED'",
+    "nightly_project_state_cycle: 'MISSED' -> 'UNQUALIFIED'"
   ]
 }
