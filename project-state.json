@@ -65,10 +65,10 @@
   ],
   "engineering": {
     "branch": "codex/consolidate-pillar-gaps",
-    "ci": "PASS",
-    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
-    "commit": "52a9480",
-    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
+    "ci": "UNKNOWN",
+    "ci_qualification": "UNAVAILABLE",
+    "commit": "c9467b6",
+    "test_health": "UNKNOWN",
     "working_tree": "dirty"
   },
   "freshness": {
@@ -115,7 +115,7 @@
     "Only after a concrete engineering-workflow need is established, evaluate the Codex SDK for scripted automation or Codex App Server for interactive integration in a non-production environment; do not use codex mcp-server, depend on Tailscale/Aperture, or connect engineering control to broker, scheduler, credential, or trading-runtime authority."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-02T23:11:12.230311+00:00",
+    "assessed_at": "2026-09-03T03:30:02.205063+00:00",
     "classification": "UNQUALIFIED",
     "completion_deadline": "2026-09-02T00:00:00-04:00",
     "completion_grace_seconds": 1800,
@@ -123,19 +123,28 @@
     "expected_cycle": "2026-09-01",
     "expected_run_at": "2026-09-01T23:30:00-04:00",
     "latest_receipt_commit": "52a9480",
-    "latest_receipt_completed_at": "2026-09-02T23:06:53.769405+00:00",
+    "latest_receipt_completed_at": "2026-09-02T23:11:12.230311+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
+    "day_complete": "FALSE",
+    "day_phase": "ELAPSED",
+    "day_success": "FALSE",
+    "host_availability": "invalid_host_availability_day",
     "operator_summary": "ATTENTION",
     "paper_safety": "UNESTABLISHED",
     "reliability": "LIKELY_HOST_UNAVAILABLE",
     "reliability_assessment_date": "2026-09-02",
     "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
     "reliability_inferred_cause": "LIKELY_HOST_UNAVAILABLE",
+    "runtime_code_config_sha256": "UNAVAILABLE",
+    "runtime_identity_state": "INCOMPLETE",
+    "runtime_relevant_local_changes": "UNKNOWN",
+    "runtime_source_revision": "UNAVAILABLE",
+    "slot_counts": "MISSED_EXPECTED_SLOT=10",
     "watcher": "HEALTHY"
   },
   "overall_project_status": "ATTENTION",
@@ -198,7 +207,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "92ed6e31586e21e1dfc3b999e12b1108af22c6e16217b02b25462416d31c6756",
+  "publication_fingerprint": "8c3d078258235efd55d529aa6833af56a33c7220c05345fc4f6de7242a1f7e7d",
   "roadmap": {
     "active_item_count": 15,
     "done_item_count": 15,
@@ -214,7 +223,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-02T23:11:12.230311+00:00",
+  "source_generated_at": "2026-09-03T03:30:02.205063+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -230,8 +239,8 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "operator_summary: 'SAFETY BLOCK' -> 'ATTENTION'",
-    "paper_safety: 'VIOLATION' -> 'UNESTABLISHED'",
-    "nightly_project_state_cycle: 'MISSED' -> 'UNQUALIFIED'"
+    "commit_sha: '52a9480f57cf058211ad34ac33a21091e773ac29' -> 'c9467b6979069721adecaa79f2c8410a722bd263'",
+    "ci: 'PASS' -> 'UNKNOWN'",
+    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'UNKNOWN'"
   ]
 }
