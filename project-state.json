@@ -52,7 +52,7 @@
     }
   ],
   "blockers": [
-    "Only the synthetic local fixture source is approved; the first source-specific review deferred Alpaca News pending written Benzinga-derived retention, deletion, and commercial-use clarification, and all other live providers remain disabled.",
+    "Only the synthetic local fixture source is approved; the September 5 revalidation kept Alpaca/Benzinga News deferred pending written durable-retention, derived-feature, deletion, audit, and commercial-use terms, and all other live providers remain disabled.",
     "Research-derived candidates have not yet accumulated the required outcome sample for performance or PAPER-readiness claims.",
     "The newly authorized dynamic PAPER universe has not yet completed a natural market cycle, prediction calibration, or filled round trip.",
     "One accepted PAPER day does not establish sustained reliability or live readiness."
@@ -64,17 +64,17 @@
   ],
   "engineering": {
     "branch": "codex/consolidate-pillar-gaps",
-    "ci": "UNKNOWN",
-    "ci_qualification": "UNAVAILABLE",
-    "commit": "8bcdc78",
-    "test_health": "UNKNOWN",
-    "working_tree": "dirty"
+    "ci": "PASS",
+    "ci_qualification": "EXACT_CLEAN_HEAD",
+    "commit": "72bcc31",
+    "test_health": "PASS_FOR_EXACT_CLEAN_HEAD",
+    "working_tree": "clean"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-09-04",
+    "publication_cycle": "2026-09-05",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -91,6 +91,7 @@
     "The voice briefing allowlist is publicly accessible; future field additions require explicit privacy and safety review."
   ],
   "latest_completed_work": [
+    "A current official-source revalidation kept Alpaca/Benzinga News at DEFER: supported technical use cases do not establish Argus's required durable retention, derived-feature, deletion, audit, and future commercial-use rights.",
     "The active Codex heartbeat argus-natural-paper-acceptance now inspects fresh completed-market research/TIP evidence at 16:30 local time on weekdays; it is read-only and cannot alter runtime, broker, scheduler, or GitHub state.",
     "The first source-specific review under issue #166 classified Alpaca News as DEFER: technical use is plausible, but Benzinga-derived retention, deletion, and commercial-use rights are not yet positively established.",
     "GitHub issue #166 now provides durable authority for natural TIP acceptance and source-governance review while explicitly withholding provider, credential, scheduler, threshold, wider PAPER, and LIVE authorization.",
@@ -99,8 +100,7 @@
     "The TIP work, recovered R1 requirements, reporting contracts, project map, and all governed scripts were reconciled into one documented architecture with full-suite and exact Safety CI validation.",
     "All 192 governed scripts now have one explicit owner, lifecycle, and retention disposition; CI rejects unclassified additions, while 17 ignored local backups are preserved outside the executable directory with hashes.",
     "The two useful requirements isolated from the superseded R1 branch now have current implementations: an immutable observational strategy-evaluation ledger and an explicit stale warning for historical legacy-CSV fallback.",
-    "A bounded foreground collector now turns approved local fixture records and read-only IEX evidence into the existing shadow artifact, with an end-to-end test proving admission into the canonical one-share PAPER runner while normal gates remain authoritative.",
-    "A fail-closed dynamic PAPER universe now uses fresh pre-trade research and ex-ante predictions while the normal strategy, freshness, RiskRules, PAPER account proof, and lifecycle remain authoritative; future outcomes calibrate the predictor without lookahead."
+    "A bounded foreground collector now turns approved local fixture records and read-only IEX evidence into the existing shadow artifact, with an end-to-end test proving admission into the canonical one-share PAPER runner while normal gates remain authoritative."
   ],
   "next_recommended_work": [
     "Preserve the first natural eligible collector-to-shadow lifecycle, verify source provenance and artifact freshness, and confirm that any PAPER outcome remains bounded to one share and reconciled through the canonical runner.",
@@ -114,36 +114,36 @@
     "Only after a concrete engineering-workflow need is established, evaluate the Codex SDK for scripted automation or Codex App Server for interactive integration in a non-production environment; do not use codex mcp-server, depend on Tailscale/Aperture, or connect engineering control to broker, scheduler, credential, or trading-runtime authority."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-05T03:30:02.086865+00:00",
+    "assessed_at": "2026-09-06T03:30:02.083567+00:00",
     "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-09-04T00:00:00-04:00",
+    "completion_deadline": "2026-09-05T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-09-03",
-    "expected_run_at": "2026-09-03T23:30:00-04:00",
-    "latest_receipt_commit": "ff1dccf",
-    "latest_receipt_completed_at": "2026-09-04T03:30:02.062141+00:00",
+    "expected_cycle": "2026-09-04",
+    "expected_run_at": "2026-09-04T23:30:00-04:00",
+    "latest_receipt_commit": "8bcdc78",
+    "latest_receipt_completed_at": "2026-09-05T03:30:02.086865+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "day_complete": "TRUE",
-    "day_phase": "ELAPSED",
-    "day_success": "TRUE",
+    "day_complete": "FALSE",
+    "day_phase": "NON_SESSION",
+    "day_success": "UNKNOWN",
     "host_availability": "UNAVAILABLE",
-    "operator_summary": "ATTENTION",
-    "paper_safety": "VERIFIED",
-    "reliability": "SUCCESS",
-    "reliability_assessment_date": "2026-09-04",
-    "reliability_execution_outcome": "SUCCESS",
+    "operator_summary": "HEALTHY",
+    "paper_safety": "VERIFIED_LAST_MARKET_DAY",
+    "reliability": "EXPECTED_SKIP",
+    "reliability_assessment_date": "2026-09-05",
+    "reliability_execution_outcome": "EXPECTED_SKIP",
     "reliability_inferred_cause": "NONE",
     "runtime_code_config_sha256": "e7f93e730467b24caf77a719cee6253048e0f41c442929e8acd3f408635b2d23",
     "runtime_identity_state": "MATCHED_START_END",
     "runtime_relevant_local_changes": "TRUE",
     "runtime_source_revision": "ff1dccf52d859c0448994abd5f379df0b61d1c10",
-    "slot_counts": "SUCCESS=10",
+    "slot_counts": "UNAVAILABLE",
     "watcher": "HEALTHY"
   },
   "overall_project_status": "ATTENTION",
@@ -206,7 +206,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "8295cc4dfdfd2b09b317d25a9c2e5157d3d5298529b98d1fa1b07b83cd84e530",
+  "publication_fingerprint": "f5432e4579f9e8e0432e64f9f4035ab9f910ead5f76d0476d2df1575e57fd56d",
   "roadmap": {
     "active_item_count": 15,
     "done_item_count": 15,
@@ -222,7 +222,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-05T03:30:02.086865+00:00",
+  "source_generated_at": "2026-09-06T03:30:02.083567+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -238,8 +238,9 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'ff1dccf52d859c0448994abd5f379df0b61d1c10' -> '8bcdc78425042dc32cac61e26fccceabecb6c9e8'",
-    "nightly_report_date: '2026-09-03' -> '2026-09-04'",
-    "nightly_project_state_expected_cycle: '2026-09-02' -> '2026-09-03'"
+    "commit_sha: 'db92bd6a0e6d990d5bef96c5ca1380ab81bdc84e' -> '72bcc313f6862603f4b306e808cf9ad21613fd3c'",
+    "working_tree: 'dirty' -> 'clean'",
+    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'PASS_FOR_EXACT_CLEAN_HEAD'",
+    "operator_summary: 'ATTENTION' -> 'HEALTHY'"
   ]
 }
