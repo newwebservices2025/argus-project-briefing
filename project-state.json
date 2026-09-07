@@ -52,33 +52,32 @@
     }
   ],
   "blockers": [
-    "Only the synthetic local fixture source is approved; the September 5 revalidation kept Alpaca/Benzinga News deferred pending written durable-retention, derived-feature, deletion, audit, and commercial-use terms, and all other live providers remain disabled.",
+    "Only the synthetic local fixture source is approved; the first source-specific review deferred Alpaca News pending written Benzinga-derived retention, deletion, and commercial-use clarification, and all other live providers remain disabled.",
     "Research-derived candidates have not yet accumulated the required outcome sample for performance or PAPER-readiness claims.",
     "The newly authorized dynamic PAPER universe has not yet completed a natural market cycle, prediction calibration, or filled round trip.",
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
-    "Review the nightly project-state cycle evidence before relying on the morning briefing.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
-    "branch": "codex/consolidate-pillar-gaps",
+    "branch": "master",
     "ci": "PASS",
-    "ci_qualification": "EXACT_CLEAN_HEAD",
-    "commit": "72bcc31",
-    "test_health": "PASS_FOR_EXACT_CLEAN_HEAD",
-    "working_tree": "clean"
+    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
+    "commit": "6506dfd",
+    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
+    "working_tree": "dirty"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-09-05",
+    "publication_cycle": "2026-09-06",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
-  "highest_value_next_action": "Investigate the nightly project-state publication evidence without changing trading runtime.",
+  "highest_value_next_action": "Preserve the first natural eligible collector-to-shadow lifecycle, verify source provenance and artifact freshness, and confirm that any PAPER outcome remains bounded to one share and reconciled through the canonical runner.",
   "known_risks": [
     "The script directory remains large because specialized evidence tooling is retained; the lifecycle manifest prevents new unclassified entrypoints and the 17 ignored backup artifacts now reside in a dated non-executable archive.",
     "The TIP bridge is an unvalidated one-share PAPER experiment; shadow evidence and confidence must never bypass normal freshness, risk, account, lifecycle, or reconciliation controls.",
@@ -91,7 +90,6 @@
     "The voice briefing allowlist is publicly accessible; future field additions require explicit privacy and safety review."
   ],
   "latest_completed_work": [
-    "A current official-source revalidation kept Alpaca/Benzinga News at DEFER: supported technical use cases do not establish Argus's required durable retention, derived-feature, deletion, audit, and future commercial-use rights.",
     "The active Codex heartbeat argus-natural-paper-acceptance now inspects fresh completed-market research/TIP evidence at 16:30 local time on weekdays; it is read-only and cannot alter runtime, broker, scheduler, or GitHub state.",
     "The first source-specific review under issue #166 classified Alpaca News as DEFER: technical use is plausible, but Benzinga-derived retention, deletion, and commercial-use rights are not yet positively established.",
     "GitHub issue #166 now provides durable authority for natural TIP acceptance and source-governance review while explicitly withholding provider, credential, scheduler, threshold, wider PAPER, and LIVE authorization.",
@@ -100,7 +98,8 @@
     "The TIP work, recovered R1 requirements, reporting contracts, project map, and all governed scripts were reconciled into one documented architecture with full-suite and exact Safety CI validation.",
     "All 192 governed scripts now have one explicit owner, lifecycle, and retention disposition; CI rejects unclassified additions, while 17 ignored local backups are preserved outside the executable directory with hashes.",
     "The two useful requirements isolated from the superseded R1 branch now have current implementations: an immutable observational strategy-evaluation ledger and an explicit stale warning for historical legacy-CSV fallback.",
-    "A bounded foreground collector now turns approved local fixture records and read-only IEX evidence into the existing shadow artifact, with an end-to-end test proving admission into the canonical one-share PAPER runner while normal gates remain authoritative."
+    "A bounded foreground collector now turns approved local fixture records and read-only IEX evidence into the existing shadow artifact, with an end-to-end test proving admission into the canonical one-share PAPER runner while normal gates remain authoritative.",
+    "A fail-closed dynamic PAPER universe now uses fresh pre-trade research and ex-ante predictions while the normal strategy, freshness, RiskRules, PAPER account proof, and lifecycle remain authoritative; future outcomes calibrate the predictor without lookahead."
   ],
   "next_recommended_work": [
     "Preserve the first natural eligible collector-to-shadow lifecycle, verify source provenance and artifact freshness, and confirm that any PAPER outcome remains bounded to one share and reconciled through the canonical runner.",
@@ -110,43 +109,33 @@
     "Observe the committed post-PAPER investigation hook on a normal market day and verify that its failure cannot alter the PAPER result.",
     "Let research-derived candidates accumulate the required enter-long outcomes at every configured horizon and inspect the advisory gate over natural market cycles.",
     "When a candidate first clears the predictive threshold, compare its time-frozen forecast with later market and filled-trade outcomes before changing any model or threshold.",
-    "Continue issue #87 sustained PAPER observation without changing the active runtime.",
-    "Only after a concrete engineering-workflow need is established, evaluate the Codex SDK for scripted automation or Codex App Server for interactive integration in a non-production environment; do not use codex mcp-server, depend on Tailscale/Aperture, or connect engineering control to broker, scheduler, credential, or trading-runtime authority."
+    "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-06T03:30:02.083567+00:00",
-    "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-09-05T00:00:00-04:00",
+    "assessed_at": "2026-09-07T03:30:02.117011+00:00",
+    "classification": "ON_TIME_SUCCESS",
+    "completion_deadline": "2026-09-06T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-09-04",
-    "expected_run_at": "2026-09-04T23:30:00-04:00",
-    "latest_receipt_commit": "8bcdc78",
-    "latest_receipt_completed_at": "2026-09-05T03:30:02.086865+00:00",
+    "expected_cycle": "2026-09-05",
+    "expected_run_at": "2026-09-05T23:30:00-04:00",
+    "latest_receipt_commit": "72bcc31",
+    "latest_receipt_completed_at": "2026-09-06T03:30:02.083567+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
+    "reason": "A qualified receipt completed within the expected nightly window.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
-    "day_complete": "FALSE",
-    "day_phase": "NON_SESSION",
-    "day_success": "UNKNOWN",
-    "host_availability": "UNAVAILABLE",
-    "operator_summary": "HEALTHY",
+    "operator_summary": "ATTENTION",
     "paper_safety": "VERIFIED_LAST_MARKET_DAY",
     "reliability": "EXPECTED_SKIP",
-    "reliability_assessment_date": "2026-09-05",
+    "reliability_assessment_date": "2026-09-06",
     "reliability_execution_outcome": "EXPECTED_SKIP",
     "reliability_inferred_cause": "NONE",
-    "runtime_code_config_sha256": "e7f93e730467b24caf77a719cee6253048e0f41c442929e8acd3f408635b2d23",
-    "runtime_identity_state": "MATCHED_START_END",
-    "runtime_relevant_local_changes": "TRUE",
-    "runtime_source_revision": "ff1dccf52d859c0448994abd5f379df0b61d1c10",
-    "slot_counts": "UNAVAILABLE",
     "watcher": "HEALTHY"
   },
-  "overall_project_status": "ATTENTION",
+  "overall_project_status": "ACTIVE_WITH_GAPS",
   "priorities": [
     {
       "id": "research-learning-loop",
@@ -206,13 +195,13 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "f5432e4579f9e8e0432e64f9f4035ab9f910ead5f76d0476d2df1575e57fd56d",
+  "publication_fingerprint": "69c25e46d5f648ab287a5d8f3b3c7f4cecddf1be8be762030ce9bcd99508112f",
   "roadmap": {
-    "active_item_count": 15,
+    "active_item_count": 18,
     "done_item_count": 15,
     "drift": "ALIGNED",
     "drift_finding_count": 0,
-    "project_item_count": 30,
+    "project_item_count": 33,
     "state": "AVAILABLE"
   },
   "safety_scope": {
@@ -222,7 +211,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-06T03:30:02.083567+00:00",
+  "source_generated_at": "2026-09-07T03:30:02.117011+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -238,9 +227,12 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: 'db92bd6a0e6d990d5bef96c5ca1380ab81bdc84e' -> '72bcc313f6862603f4b306e808cf9ad21613fd3c'",
-    "working_tree: 'dirty' -> 'clean'",
-    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'PASS_FOR_EXACT_CLEAN_HEAD'",
-    "operator_summary: 'ATTENTION' -> 'HEALTHY'"
+    "commit_sha: '72bcc313f6862603f4b306e808cf9ad21613fd3c' -> '6506dfdc67613bcbffaee2395da7de84255935f1'",
+    "working_tree: 'clean' -> 'dirty'",
+    "test_health: 'PASS_FOR_EXACT_CLEAN_HEAD' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
+    "operator_summary: 'HEALTHY' -> 'ATTENTION'",
+    "nightly_project_state_cycle: 'UNQUALIFIED' -> 'ON_TIME_SUCCESS'",
+    "nightly_project_state_expected_cycle: '2026-09-04' -> '2026-09-05'",
+    "roadmap_active: 15 -> 18"
   ]
 }
