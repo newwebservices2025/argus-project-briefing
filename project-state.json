@@ -58,6 +58,7 @@
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
+    "Review the nightly project-state cycle evidence before relying on the morning briefing.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
@@ -65,7 +66,7 @@
     "branch": "master",
     "ci": "PASS",
     "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
-    "commit": "6506dfd",
+    "commit": "18e5a6f",
     "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
     "working_tree": "dirty"
   },
@@ -73,11 +74,11 @@
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-09-06",
+    "publication_cycle": "2026-09-07",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
-  "highest_value_next_action": "Preserve the first natural eligible collector-to-shadow lifecycle, verify source provenance and artifact freshness, and confirm that any PAPER outcome remains bounded to one share and reconciled through the canonical runner.",
+  "highest_value_next_action": "Investigate the nightly project-state publication evidence without changing trading runtime.",
   "known_risks": [
     "The script directory remains large because specialized evidence tooling is retained; the lifecycle manifest prevents new unclassified entrypoints and the 17 ignored backup artifacts now reside in a dated non-executable archive.",
     "The TIP bridge is an unvalidated one-share PAPER experiment; shadow evidence and confidence must never bypass normal freshness, risk, account, lifecycle, or reconciliation controls.",
@@ -112,30 +113,30 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-07T03:30:02.117011+00:00",
-    "classification": "ON_TIME_SUCCESS",
-    "completion_deadline": "2026-09-06T00:00:00-04:00",
+    "assessed_at": "2026-09-08T03:30:02.136627+00:00",
+    "classification": "UNQUALIFIED",
+    "completion_deadline": "2026-09-07T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-09-05",
-    "expected_run_at": "2026-09-05T23:30:00-04:00",
-    "latest_receipt_commit": "72bcc31",
-    "latest_receipt_completed_at": "2026-09-06T03:30:02.083567+00:00",
+    "expected_cycle": "2026-09-06",
+    "expected_run_at": "2026-09-06T23:30:00-04:00",
+    "latest_receipt_commit": "6506dfd",
+    "latest_receipt_completed_at": "2026-09-07T03:30:02.117011+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "A qualified receipt completed within the expected nightly window.",
+    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
     "operator_summary": "ATTENTION",
     "paper_safety": "VERIFIED_LAST_MARKET_DAY",
     "reliability": "EXPECTED_SKIP",
-    "reliability_assessment_date": "2026-09-06",
+    "reliability_assessment_date": "2026-09-07",
     "reliability_execution_outcome": "EXPECTED_SKIP",
     "reliability_inferred_cause": "NONE",
     "watcher": "HEALTHY"
   },
-  "overall_project_status": "ACTIVE_WITH_GAPS",
+  "overall_project_status": "ATTENTION",
   "priorities": [
     {
       "id": "research-learning-loop",
@@ -195,7 +196,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "69c25e46d5f648ab287a5d8f3b3c7f4cecddf1be8be762030ce9bcd99508112f",
+  "publication_fingerprint": "6dd93e81660a1ce00141778845b89bea1db03d470c20c69b65dbdf69be696401",
   "roadmap": {
     "active_item_count": 18,
     "done_item_count": 15,
@@ -211,7 +212,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-07T03:30:02.117011+00:00",
+  "source_generated_at": "2026-09-08T03:30:02.136627+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -227,12 +228,8 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "commit_sha: '72bcc313f6862603f4b306e808cf9ad21613fd3c' -> '6506dfdc67613bcbffaee2395da7de84255935f1'",
-    "working_tree: 'clean' -> 'dirty'",
-    "test_health: 'PASS_FOR_EXACT_CLEAN_HEAD' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
-    "operator_summary: 'HEALTHY' -> 'ATTENTION'",
-    "nightly_project_state_cycle: 'UNQUALIFIED' -> 'ON_TIME_SUCCESS'",
-    "nightly_project_state_expected_cycle: '2026-09-04' -> '2026-09-05'",
-    "roadmap_active: 15 -> 18"
+    "commit_sha: '6506dfdc67613bcbffaee2395da7de84255935f1' -> '18e5a6f248dc3c7305b380cbf799009c8c127571'",
+    "nightly_project_state_cycle: 'ON_TIME_SUCCESS' -> 'UNQUALIFIED'",
+    "nightly_project_state_expected_cycle: '2026-09-05' -> '2026-09-06'"
   ]
 }
