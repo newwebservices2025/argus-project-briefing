@@ -58,28 +58,27 @@
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
-    "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
     "Review the nightly project-state cycle evidence before relying on the morning briefing.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
   ],
   "engineering": {
     "branch": "master",
-    "ci": "UNKNOWN",
-    "ci_qualification": "UNAVAILABLE",
+    "ci": "PASS",
+    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
     "commit": "950dcdb",
-    "test_health": "UNKNOWN",
+    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
     "working_tree": "dirty"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-09-25",
+    "publication_cycle": "2026-09-27",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
-  "highest_value_next_action": "Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.",
+  "highest_value_next_action": "Investigate the nightly project-state publication evidence without changing trading runtime.",
   "known_risks": [
     "The script directory remains large because specialized evidence tooling is retained; the lifecycle manifest prevents new unclassified entrypoints and the 17 ignored backup artifacts now reside in a dated non-executable archive.",
     "The TIP bridge is an unvalidated one-share PAPER experiment; shadow evidence and confidence must never bypass normal freshness, risk, account, lifecycle, or reconciliation controls.",
@@ -114,15 +113,15 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-25T14:07:01.581104+00:00",
+    "assessed_at": "2026-09-27T15:59:59.293423+00:00",
     "classification": "MISSED",
-    "completion_deadline": "2026-09-25T00:00:00-04:00",
+    "completion_deadline": "2026-09-27T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-09-24",
-    "expected_run_at": "2026-09-24T23:30:00-04:00",
+    "expected_cycle": "2026-09-26",
+    "expected_run_at": "2026-09-26T23:30:00-04:00",
     "latest_receipt_commit": "950dcdb",
-    "latest_receipt_completed_at": "2026-09-20T03:30:01.378738+00:00",
+    "latest_receipt_completed_at": "2026-09-25T14:07:01.581104+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "The latest receipt predates the expected nightly slot.",
@@ -131,10 +130,10 @@
   "operations": {
     "operator_summary": "ATTENTION",
     "paper_safety": "UNESTABLISHED",
-    "reliability": "MISSED_EXPECTED_SLOT",
-    "reliability_assessment_date": "2026-09-25",
-    "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
-    "reliability_inferred_cause": "UNKNOWN",
+    "reliability": "EXPECTED_SKIP",
+    "reliability_assessment_date": "2026-09-27",
+    "reliability_execution_outcome": "EXPECTED_SKIP",
+    "reliability_inferred_cause": "NONE",
     "watcher": "STOPPED"
   },
   "overall_project_status": "ATTENTION",
@@ -197,7 +196,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "d2c623519aec477496222a7ff9503ede19fc7108af20f269f65ab5ff09071294",
+  "publication_fingerprint": "9dc955b97dbb9e6a19fe9029113844b44655389e67b2cffb55fb9fa47dcc2366",
   "roadmap": {
     "active_item_count": 18,
     "done_item_count": 15,
@@ -213,7 +212,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-25T14:07:01.581104+00:00",
+  "source_generated_at": "2026-09-27T15:59:59.293423+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -229,10 +228,8 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "ci: 'PASS' -> 'UNKNOWN'",
-    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'UNKNOWN'",
-    "watcher: 'HEALTHY' -> 'STOPPED'",
-    "nightly_project_state_cycle: 'UNQUALIFIED' -> 'MISSED'",
-    "nightly_project_state_expected_cycle: '2026-09-18' -> '2026-09-24'"
+    "ci: 'UNKNOWN' -> 'PASS'",
+    "test_health: 'UNKNOWN' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
+    "nightly_project_state_expected_cycle: '2026-09-24' -> '2026-09-26'"
   ]
 }
