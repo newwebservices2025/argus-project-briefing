@@ -113,18 +113,18 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-27T15:59:59.293423+00:00",
-    "classification": "MISSED",
+    "assessed_at": "2026-09-28T03:30:01.309294+00:00",
+    "classification": "UNQUALIFIED",
     "completion_deadline": "2026-09-27T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
     "expected_cycle": "2026-09-26",
     "expected_run_at": "2026-09-26T23:30:00-04:00",
     "latest_receipt_commit": "950dcdb",
-    "latest_receipt_completed_at": "2026-09-25T14:07:01.581104+00:00",
+    "latest_receipt_completed_at": "2026-09-27T15:59:59.293423+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "The latest receipt predates the expected nightly slot.",
+    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
@@ -196,7 +196,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "9dc955b97dbb9e6a19fe9029113844b44655389e67b2cffb55fb9fa47dcc2366",
+  "publication_fingerprint": "dc7b74ba1c7820c03a47423bb11dc39f140cb136651cd8db130b2f46161c8160",
   "roadmap": {
     "active_item_count": 18,
     "done_item_count": 15,
@@ -212,7 +212,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-27T15:59:59.293423+00:00",
+  "source_generated_at": "2026-09-28T03:30:01.309294+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -228,8 +228,6 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "ci: 'UNKNOWN' -> 'PASS'",
-    "test_health: 'UNKNOWN' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
-    "nightly_project_state_expected_cycle: '2026-09-24' -> '2026-09-26'"
+    "nightly_project_state_cycle: 'MISSED' -> 'UNQUALIFIED'"
   ]
 }
