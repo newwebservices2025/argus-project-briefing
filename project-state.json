@@ -65,17 +65,17 @@
   ],
   "engineering": {
     "branch": "master",
-    "ci": "UNKNOWN",
-    "ci_qualification": "UNAVAILABLE",
+    "ci": "PASS",
+    "ci_qualification": "HEAD_VALIDATED_WITH_UNCOMMITTED_CHANGES",
     "commit": "950dcdb",
-    "test_health": "UNKNOWN",
+    "test_health": "UNKNOWN_FOR_UNCOMMITTED_WORKTREE",
     "working_tree": "dirty"
   },
   "freshness": {
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-09-29",
+    "publication_cycle": "2026-10-01",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -114,25 +114,25 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-09-30T03:30:02.066276+00:00",
-    "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-09-29T00:00:00-04:00",
+    "assessed_at": "2026-10-02T03:30:01.766773+00:00",
+    "classification": "MISSED",
+    "completion_deadline": "2026-10-01T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-09-28",
-    "expected_run_at": "2026-09-28T23:30:00-04:00",
+    "expected_cycle": "2026-09-30",
+    "expected_run_at": "2026-09-30T23:30:00-04:00",
     "latest_receipt_commit": "950dcdb",
-    "latest_receipt_completed_at": "2026-09-29T05:18:31.191962+00:00",
+    "latest_receipt_completed_at": "2026-09-30T03:30:02.066276+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
-    "reason": "The latest late receipt lacks required publication, Git/CI, or safety evidence.",
+    "reason": "The latest receipt predates the expected nightly slot.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
     "operator_summary": "ATTENTION",
     "paper_safety": "UNESTABLISHED",
     "reliability": "MISSED_EXPECTED_SLOT",
-    "reliability_assessment_date": "2026-09-29",
+    "reliability_assessment_date": "2026-10-01",
     "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
     "reliability_inferred_cause": "UNKNOWN",
     "watcher": "STOPPED"
@@ -197,14 +197,14 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "fd1e888365f7e2975a7a6b8a1f470a0e9ea306e2c4f0413436284941aee3d14c",
+  "publication_fingerprint": "7f1399e78f8ef5a19d300271f9d96cc117f091f3d871832d169dd7be6ccc7761",
   "roadmap": {
-    "active_item_count": 0,
-    "done_item_count": 0,
-    "drift": "NOT_ASSESSABLE",
-    "drift_finding_count": 9,
-    "project_item_count": 0,
-    "state": "UNAVAILABLE"
+    "active_item_count": 18,
+    "done_item_count": 15,
+    "drift": "ALIGNED",
+    "drift_finding_count": 0,
+    "project_item_count": 33,
+    "state": "AVAILABLE"
   },
   "safety_scope": {
     "authorizes_execution": false,
@@ -213,7 +213,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-09-30T03:30:02.066276+00:00",
+  "source_generated_at": "2026-10-02T03:30:01.766773+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -229,10 +229,11 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "ci: 'PASS' -> 'UNKNOWN'",
-    "test_health: 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE' -> 'UNKNOWN'",
-    "nightly_project_state_cycle: 'MISSED' -> 'UNQUALIFIED'",
-    "roadmap_active: 18 -> 0",
-    "roadmap_drift: 'ALIGNED' -> 'NOT_ASSESSABLE'"
+    "ci: 'UNKNOWN' -> 'PASS'",
+    "test_health: 'UNKNOWN' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
+    "nightly_project_state_cycle: 'UNQUALIFIED' -> 'MISSED'",
+    "nightly_project_state_expected_cycle: '2026-09-28' -> '2026-09-30'",
+    "roadmap_active: 0 -> 18",
+    "roadmap_drift: 'NOT_ASSESSABLE' -> 'ALIGNED'"
   ]
 }
