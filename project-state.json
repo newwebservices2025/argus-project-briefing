@@ -58,6 +58,7 @@
     "One accepted PAPER day does not establish sustained reliability or live readiness."
   ],
   "dan_attention": [
+    "Review the current market-cycle reliability failure; later successful cycles do not erase the failed slot's evidence.",
     "Review the nightly project-state cycle evidence before relying on the morning briefing.",
     "In the AI trading project on CarPlay, say \u201cArgus, status update\u201d and confirm the response cites fresh canonical evidence rather than conversational memory.",
     "Confirm that the clearly labeled synthetic Argus notification appears in GitHub Mobile or the configured GitHub notification inbox."
@@ -74,11 +75,11 @@
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-10-03",
+    "publication_cycle": "2026-10-07",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
-  "highest_value_next_action": "Investigate the nightly project-state publication evidence without changing trading runtime.",
+  "highest_value_next_action": "Investigate current market-cycle reliability evidence while preserving PAPER-only and fail-closed behavior.",
   "known_risks": [
     "The script directory remains large because specialized evidence tooling is retained; the lifecycle manifest prevents new unclassified entrypoints and the 17 ignored backup artifacts now reside in a dated non-executable archive.",
     "The TIP bridge is an unvalidated one-share PAPER experiment; shadow evidence and confidence must never bypass normal freshness, risk, account, lifecycle, or reconciliation controls.",
@@ -113,27 +114,27 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-10-04T03:30:02.484924+00:00",
-    "classification": "UNQUALIFIED",
-    "completion_deadline": "2026-10-03T00:00:00-04:00",
+    "assessed_at": "2026-10-08T03:30:02.249408+00:00",
+    "classification": "FAILED",
+    "completion_deadline": "2026-10-07T00:00:00-04:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-10-02",
-    "expected_run_at": "2026-10-02T23:30:00-04:00",
+    "expected_cycle": "2026-10-06",
+    "expected_run_at": "2026-10-06T23:30:00-04:00",
     "latest_receipt_commit": "950dcdb",
-    "latest_receipt_completed_at": "2026-10-03T03:30:02.162541+00:00",
-    "latest_receipt_publication_action": "updated",
-    "latest_receipt_web_publication_action": "updated",
-    "reason": "A receipt exists in the expected window but lacks required publication, Git/CI, or safety evidence.",
+    "latest_receipt_completed_at": "2026-10-07T16:38:08.615766+00:00",
+    "latest_receipt_publication_action": "FAILED",
+    "latest_receipt_web_publication_action": "FAILED",
+    "reason": "The expected nightly receipt records a publication failure.",
     "schema_version": "argus_project_state_nightly_cycle_v1"
   },
   "operations": {
     "operator_summary": "ATTENTION",
     "paper_safety": "UNESTABLISHED",
-    "reliability": "EXPECTED_SKIP",
-    "reliability_assessment_date": "2026-10-03",
-    "reliability_execution_outcome": "EXPECTED_SKIP",
-    "reliability_inferred_cause": "NONE",
+    "reliability": "MISSED_EXPECTED_SLOT",
+    "reliability_assessment_date": "2026-10-07",
+    "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
+    "reliability_inferred_cause": "UNKNOWN",
     "watcher": "STOPPED"
   },
   "overall_project_status": "ATTENTION",
@@ -196,7 +197,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "997c9d695dec218ac052d874decf4e6abb8f66287fb3c3f62a537f2631118dde",
+  "publication_fingerprint": "0a350116dab783d8d7601d14b4d64ac52c808664bf0afe82e83ed124ac8de42c",
   "roadmap": {
     "active_item_count": 18,
     "done_item_count": 15,
@@ -212,7 +213,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-10-04T03:30:02.484924+00:00",
+  "source_generated_at": "2026-10-08T03:30:02.249408+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -228,6 +229,10 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "nightly_project_state_expected_cycle: '2026-10-01' -> '2026-10-02'"
+    "ci: 'UNKNOWN' -> 'PASS'",
+    "test_health: 'UNKNOWN' -> 'UNKNOWN_FOR_UNCOMMITTED_WORKTREE'",
+    "nightly_project_state_cycle: 'MISSED' -> 'FAILED'",
+    "roadmap_active: 0 -> 18",
+    "roadmap_drift: 'NOT_ASSESSABLE' -> 'ALIGNED'"
   ]
 }
