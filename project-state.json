@@ -75,7 +75,7 @@
     "consumer_rule": "Compare the current time with source generated_at; classify STALE when the configured age is exceeded and UNKNOWN for invalid or future evidence.",
     "expected_cadence": "NIGHTLY_OR_AFTER_MEANINGFUL_CHANGE",
     "future_tolerance_seconds": 300,
-    "publication_cycle": "2026-11-09",
+    "publication_cycle": "2026-11-10",
     "schema_version": "argus_project_state_freshness_v1",
     "stale_after_seconds": 129600
   },
@@ -114,15 +114,15 @@
     "Continue issue #87 sustained PAPER observation without changing the active runtime."
   ],
   "nightly_cycle": {
-    "assessed_at": "2026-11-10T03:30:01.479293+00:00",
+    "assessed_at": "2026-11-11T03:30:01.530121+00:00",
     "classification": "MISSED",
-    "completion_deadline": "2026-11-09T00:00:00-05:00",
+    "completion_deadline": "2026-11-10T00:00:00-05:00",
     "completion_grace_seconds": 1800,
     "consumer_rule": "Assess the latest qualified consolidation receipt against the most recent 23:30 slot whose completion grace has elapsed; this cadence classification is independent of snapshot age freshness.",
-    "expected_cycle": "2026-11-08",
-    "expected_run_at": "2026-11-08T23:30:00-05:00",
+    "expected_cycle": "2026-11-09",
+    "expected_run_at": "2026-11-09T23:30:00-05:00",
     "latest_receipt_commit": "950dcdb",
-    "latest_receipt_completed_at": "2026-11-09T03:30:01.540478+00:00",
+    "latest_receipt_completed_at": "2026-11-10T03:30:01.479293+00:00",
     "latest_receipt_publication_action": "updated",
     "latest_receipt_web_publication_action": "updated",
     "reason": "The latest receipt predates the expected nightly slot.",
@@ -132,7 +132,7 @@
     "operator_summary": "ATTENTION",
     "paper_safety": "UNESTABLISHED",
     "reliability": "MISSED_EXPECTED_SLOT",
-    "reliability_assessment_date": "2026-11-09",
+    "reliability_assessment_date": "2026-11-10",
     "reliability_execution_outcome": "MISSED_EXPECTED_SLOT",
     "reliability_inferred_cause": "UNKNOWN",
     "watcher": "STOPPED"
@@ -197,7 +197,7 @@
     "surface": "github_issue",
     "url": "https://github.com/newwebservices2025/ai_trader/issues/154"
   },
-  "publication_fingerprint": "e122dc3b4ee4326a444330d0fd66ae3cbada10e163e49ec8d05d56a9a423c863",
+  "publication_fingerprint": "18cb87e6f84acbf2fe46e9ffd1dde0862a2b636617187a3d5c6d2e05847567be",
   "roadmap": {
     "active_item_count": 18,
     "done_item_count": 15,
@@ -213,7 +213,7 @@
     "reporting_only": true
   },
   "schema_version": "argus_project_briefing_public_v1",
-  "source_generated_at": "2026-11-10T03:30:01.479293+00:00",
+  "source_generated_at": "2026-11-11T03:30:01.530121+00:00",
   "source_schema_version": "argus_project_state_v1",
   "trading_intelligence": {
     "daily_pnl": 0.0,
@@ -229,6 +229,6 @@
     "unrealized_pnl": "UNAVAILABLE"
   },
   "what_changed": [
-    "nightly_project_state_expected_cycle: '2026-11-07' -> '2026-11-08'"
+    "nightly_project_state_expected_cycle: '2026-11-08' -> '2026-11-09'"
   ]
 }
